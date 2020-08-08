@@ -1,6 +1,7 @@
 # DP2_pass
 Group project for DP2 pass
 Swinburne University of Technology
+Group 7
 
 *Student Name || ID number*
 
