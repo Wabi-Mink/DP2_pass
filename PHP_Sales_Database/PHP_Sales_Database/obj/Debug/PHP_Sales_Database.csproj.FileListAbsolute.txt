@@ -1,0 +1,9 @@
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.PHP_Sales_System.resources
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+C:\Users\Jayden McQueen\Documents\Swinburne Work\Semester 2 2020\Development Project 2 - Design, Planning and Management\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
