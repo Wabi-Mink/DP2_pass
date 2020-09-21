@@ -19,6 +19,7 @@ namespace PHP_Sales_Database {
 
         }
 
+
         private void button1_Click(object sender, EventArgs e) {
             //Just testing the file output feature when the button is pressed
             //Prints and appends "Hello World" to the test file when button is pressed
@@ -28,5 +29,14 @@ namespace PHP_Sales_Database {
             file.Close();
         }
 
+        private void button2_Click(object sender, EventArgs e) {
+            new Form2().Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            new Form4().Show();
+            this.Hide();
+        }
     }
 }
