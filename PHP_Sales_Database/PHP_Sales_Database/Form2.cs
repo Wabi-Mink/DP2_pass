@@ -16,16 +16,7 @@ namespace PHP_Sales_Database {
         }
 
         private void Test_Load(object sender, EventArgs e) {
-            StreamReader fileRead = new StreamReader("salesRecords.txt");
-            if (fileRead.EndOfStream) {
-                fileRead.Close();
-                StreamWriter fileWrite = new StreamWriter("salesRecords.txt", true);
-                fileWrite.WriteLine("sales_ID,date,prod_ID");
-                fileWrite.Close();
-            }
-            else {
-                fileRead.Close();
-            }
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) {
