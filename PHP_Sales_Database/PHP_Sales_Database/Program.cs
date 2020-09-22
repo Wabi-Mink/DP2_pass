@@ -13,7 +13,7 @@ namespace PHP_Sales_Database {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PHP_Sales_System());
+            Application.Run(new main());
         }
     }
 }
