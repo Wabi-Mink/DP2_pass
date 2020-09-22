@@ -7,36 +7,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+using System.Runtime.InteropServices;
 
-namespace PHP_Sales_Database {
-    public partial class PHP_Sales_System : Form {
-        public PHP_Sales_System() {
+
+namespace PHP_Sales_Database
+{
+
+    public partial class main : Form
+    {
+        //bunch of random imports for custom title bar
+        //cre: https://www.codeproject.com/Articles/11114/Move-window-form-without-Titlebar-in-C;
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd,
+                         int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        public main()
+        {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        private void mainTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        private void mainTitleBar_label_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
 
+        private void mainTitleBar_x_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mainTitleBar_minimise_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
 
-        private void button1_Click(object sender, EventArgs e) {
-            //Just testing the file output feature when the button is pressed
-            //Prints and appends "Hello World" to the test file when button is pressed
-            StreamWriter file = new StreamWriter("test.txt", true);
-            file.WriteLine("Hello World");
-            file.Flush();
-            file.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e) {
-            new Form2().Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e) {
-            new Form4().Show();
-            this.Hide();
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            new viewSales().Show();
+            this.Close();
         }
     }
 }
