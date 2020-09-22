@@ -59,11 +59,16 @@ namespace PHP_Sales_Database
             this.WindowState = FormWindowState.Minimized;
         }
 
-
+        //effectively switching between forms
+        //cre: https://stackoverflow.com/questions/5848154/winforms-switching-between-forms
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            new viewSales().Show();
-            this.Close();
+            var viewSales = new viewSales();
+            viewSales.Location = this.Location;
+            viewSales.StartPosition = FormStartPosition.Manual;
+            viewSales.FormClosing += delegate { this.Show(); };
+            viewSales.Show();
+            this.Hide();
         }
     }
 }
