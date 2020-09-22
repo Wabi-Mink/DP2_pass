@@ -23,6 +23,7 @@ namespace PHP_Sales_Database {
             //salesRecords.txt is loaded by StreamReader
             //and all entries are placed into a table to be viewed/edited
             StreamReader records = new StreamReader("salesRecords.txt");
+            records.ReadLine();
             while (!records.EndOfStream) {
                 string[] entry = records.ReadLine().Split(',');
                 dataGridView1.Rows.Add(entry);
@@ -43,7 +44,7 @@ namespace PHP_Sales_Database {
             int colCount = dataGridView1.Columns.Count;
             int rowCount = dataGridView1.Rows.Count;
             StreamWriter file = new StreamWriter("salesRecords.txt", false);
-            file.WriteLine("SalesID,Date,PurchaseID");
+            file.WriteLine("sales_ID,date,prod_ID");
             for (int i = 0; i < rowCount -1; i++) {
                 for (int s = 0; s < colCount; s++) {
                     file.Write(dataGridView1[s,i].Value.ToString());

@@ -20,7 +20,7 @@ namespace PHP_Sales_Database {
             if (fileRead.EndOfStream) {
                 fileRead.Close();
                 StreamWriter fileWrite = new StreamWriter("salesRecords.txt", true);
-                fileWrite.WriteLine("SalesID,Date,PurchaseID");
+                fileWrite.WriteLine("sales_ID,date,prod_ID");
                 fileWrite.Close();
             }
             else {
