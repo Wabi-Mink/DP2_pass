@@ -43,6 +43,7 @@ namespace PHP_Sales_Database {
             int colCount = dataGridView1.Columns.Count;
             int rowCount = dataGridView1.Rows.Count;
             StreamWriter file = new StreamWriter("salesRecords.txt", false);
+            file.WriteLine("SalesID,Date,PurchaseID");
             for (int i = 0; i < rowCount -1; i++) {
                 for (int s = 0; s < colCount; s++) {
                     file.Write(dataGridView1[s,i].Value.ToString());
