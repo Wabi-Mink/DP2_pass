@@ -64,6 +64,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Add Sales Record";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -82,6 +83,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "View Sales Records";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -153,7 +155,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PHP_Sales_System";
-            this.Text = "PHP Sales System";
+            this.Text = " ";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
