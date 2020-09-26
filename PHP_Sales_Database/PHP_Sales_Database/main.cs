@@ -15,6 +15,9 @@ namespace PHP_Sales_Database
 {
     public partial class main : Form
     {
+        //Constants for moving borderless window
+        //Cre: https://stackoverflow.com/questions/1592876/make-a-borderless-form-movable
+        
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -26,6 +29,7 @@ namespace PHP_Sales_Database
         public main()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void mainTitleBar_panel_MouseDown(object sender, MouseEventArgs e)
@@ -47,6 +51,7 @@ namespace PHP_Sales_Database
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Open a viewSales instance at the same position
         private void mainSales_label_Click(object sender, EventArgs e)
         {
             var viewSales = new viewSales();

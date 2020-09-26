@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
-
+using System.IO;
 
 namespace PHP_Sales_Database
 {
@@ -37,17 +36,6 @@ namespace PHP_Sales_Database
             }
         }
 
-        private void mainClose_panel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void mainMinimise_panel_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-
         private void viewSalesMinimise_panel_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -56,6 +44,42 @@ namespace PHP_Sales_Database
         private void mainBack_label_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void viewSalesAdd_button_Click(object sender, EventArgs e)
+        {
+            var addSales = new addSales();
+            addSales.Location = this.Location;
+            addSales.StartPosition = FormStartPosition.CenterParent;
+            addSales.ShowDialog();
+        }
+
+        private void viewSalesTitleBar_panel_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void viewSales_Load(object sender, EventArgs e)
+        {
+            //salesRecords.txt is loaded by StreamReader
+            //and all entries are placed into a table to be viewed/edited
+            StreamReader records = new StreamReader("salesRecords.txt");
+            records.ReadLine();
+            while (!records.EndOfStream)
+            {
+                string[] entry = records.ReadLine().Split(',');
+                viewSalesSales_grid.Rows.Add(entry);
+            }
+            records.Close();
+        }
+
+        private void viewSalesEdit_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            viewSalesSales_grid.ReadOnly = !viewSalesSales_grid.ReadOnly;
         }
     }
 }
