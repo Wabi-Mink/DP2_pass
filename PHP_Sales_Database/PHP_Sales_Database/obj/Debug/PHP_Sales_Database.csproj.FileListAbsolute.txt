@@ -33,3 +33,4 @@ B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and M
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
