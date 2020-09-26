@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.mainWelcome_label = new System.Windows.Forms.Label();
-            this.mainContent_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,10 +43,10 @@
             this.mainInbox_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mainTitleBar_panel = new System.Windows.Forms.Panel();
+            this.mainMain_label = new System.Windows.Forms.Label();
             this.mainBack_label = new System.Windows.Forms.Label();
             this.mainMinimise_panel = new System.Windows.Forms.Label();
             this.mainClose_panel = new System.Windows.Forms.Label();
-            this.mainMain_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,26 +58,17 @@
             // 
             // mainWelcome_label
             // 
-            this.mainWelcome_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainWelcome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainWelcome_label.Location = new System.Drawing.Point(17, 20);
             this.mainWelcome_label.Name = "mainWelcome_label";
             this.mainWelcome_label.Size = new System.Drawing.Size(542, 39);
             this.mainWelcome_label.TabIndex = 0;
-            this.mainWelcome_label.Text = "mainWelcome_label";
+            this.mainWelcome_label.Text = "Welcome User!";
             this.mainWelcome_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // mainContent_label
-            // 
-            this.mainContent_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainContent_label.Location = new System.Drawing.Point(18, 76);
-            this.mainContent_label.Name = "mainContent_label";
-            this.mainContent_label.Size = new System.Drawing.Size(541, 447);
-            this.mainContent_label.TabIndex = 1;
-            this.mainContent_label.Text = "mainWelcome_label";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.mainExport_button);
@@ -110,23 +100,33 @@
             // 
             // mainExport_button
             // 
+            this.mainExport_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainExport_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainExport_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
+            this.mainExport_button.FlatAppearance.BorderSize = 0;
+            this.mainExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.mainExport_button.Location = new System.Drawing.Point(70, 493);
             this.mainExport_button.Name = "mainExport_button";
             this.mainExport_button.Size = new System.Drawing.Size(89, 30);
             this.mainExport_button.TabIndex = 3;
             this.mainExport_button.Text = "Export";
-            this.mainExport_button.UseVisualStyleBackColor = true;
+            this.mainExport_button.UseVisualStyleBackColor = false;
             // 
             // mainSettings_button
             // 
+            this.mainSettings_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainSettings_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainSettings_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
+            this.mainSettings_button.FlatAppearance.BorderSize = 0;
+            this.mainSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.mainSettings_button.Location = new System.Drawing.Point(70, 454);
             this.mainSettings_button.Name = "mainSettings_button";
             this.mainSettings_button.Size = new System.Drawing.Size(89, 29);
             this.mainSettings_button.TabIndex = 2;
             this.mainSettings_button.Text = "Settings";
-            this.mainSettings_button.UseVisualStyleBackColor = true;
+            this.mainSettings_button.UseVisualStyleBackColor = false;
             // 
             // mainUsername_label
             // 
@@ -148,7 +148,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.panel2.Controls.Add(this.mainReports_label);
             this.panel2.Controls.Add(this.mainInventory_label);
             this.panel2.Controls.Add(this.mainSales_label);
@@ -160,9 +160,11 @@
             // 
             // mainReports_label
             // 
+            this.mainReports_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.mainReports_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainReports_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainReports_label.ForeColor = System.Drawing.Color.White;
             this.mainReports_label.Location = new System.Drawing.Point(6, 164);
             this.mainReports_label.Name = "mainReports_label";
             this.mainReports_label.Size = new System.Drawing.Size(152, 29);
@@ -172,9 +174,11 @@
             // 
             // mainInventory_label
             // 
+            this.mainInventory_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.mainInventory_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainInventory_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainInventory_label.ForeColor = System.Drawing.Color.White;
             this.mainInventory_label.Location = new System.Drawing.Point(6, 115);
             this.mainInventory_label.Name = "mainInventory_label";
             this.mainInventory_label.Size = new System.Drawing.Size(152, 29);
@@ -184,9 +188,11 @@
             // 
             // mainSales_label
             // 
+            this.mainSales_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.mainSales_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainSales_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainSales_label.ForeColor = System.Drawing.Color.White;
             this.mainSales_label.Location = new System.Drawing.Point(6, 67);
             this.mainSales_label.Name = "mainSales_label";
             this.mainSales_label.Size = new System.Drawing.Size(152, 29);
@@ -197,9 +203,11 @@
             // 
             // mainInbox_label
             // 
+            this.mainInbox_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.mainInbox_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainInbox_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainInbox_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainInbox_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainInbox_label.ForeColor = System.Drawing.Color.White;
             this.mainInbox_label.Location = new System.Drawing.Point(6, 18);
             this.mainInbox_label.Name = "mainInbox_label";
             this.mainInbox_label.Size = new System.Drawing.Size(152, 29);
@@ -209,8 +217,8 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.mainWelcome_label);
-            this.panel3.Controls.Add(this.mainContent_label);
             this.panel3.Location = new System.Drawing.Point(339, 39);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(577, 543);
@@ -218,7 +226,7 @@
             // 
             // mainTitleBar_panel
             // 
-            this.mainTitleBar_panel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.mainTitleBar_panel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.mainTitleBar_panel.Controls.Add(this.mainMain_label);
             this.mainTitleBar_panel.Controls.Add(this.mainBack_label);
             this.mainTitleBar_panel.Controls.Add(this.mainMinimise_panel);
@@ -228,6 +236,18 @@
             this.mainTitleBar_panel.Size = new System.Drawing.Size(918, 43);
             this.mainTitleBar_panel.TabIndex = 5;
             this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainTitleBar_panel_MouseDown);
+            // 
+            // mainMain_label
+            // 
+            this.mainMain_label.AutoSize = true;
+            this.mainMain_label.BackColor = System.Drawing.Color.Transparent;
+            this.mainMain_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainMain_label.Location = new System.Drawing.Point(421, 6);
+            this.mainMain_label.Name = "mainMain_label";
+            this.mainMain_label.Size = new System.Drawing.Size(81, 30);
+            this.mainMain_label.TabIndex = 4;
+            this.mainMain_label.Text = "MAIN";
+            this.mainMain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainBack_label
             // 
@@ -261,18 +281,6 @@
             this.mainClose_panel.Text = "X";
             this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
             // 
-            // mainMain_label
-            // 
-            this.mainMain_label.AutoSize = true;
-            this.mainMain_label.BackColor = System.Drawing.Color.Transparent;
-            this.mainMain_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMain_label.Location = new System.Drawing.Point(421, 6);
-            this.mainMain_label.Name = "mainMain_label";
-            this.mainMain_label.Size = new System.Drawing.Size(86, 31);
-            this.mainMain_label.TabIndex = 4;
-            this.mainMain_label.Text = "MAIN";
-            this.mainMain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -300,7 +308,6 @@
         #endregion
 
         private System.Windows.Forms.Label mainWelcome_label;
-        private System.Windows.Forms.Label mainContent_label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

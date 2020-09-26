@@ -64,7 +64,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.viewSalesExport_button);
@@ -96,23 +96,31 @@
             // 
             // viewSalesExport_button
             // 
+            this.viewSalesExport_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.viewSalesExport_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewSalesExport_button.FlatAppearance.BorderSize = 0;
+            this.viewSalesExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.viewSalesExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.viewSalesExport_button.Location = new System.Drawing.Point(70, 493);
             this.viewSalesExport_button.Name = "viewSalesExport_button";
             this.viewSalesExport_button.Size = new System.Drawing.Size(89, 30);
             this.viewSalesExport_button.TabIndex = 3;
             this.viewSalesExport_button.Text = "Export";
-            this.viewSalesExport_button.UseVisualStyleBackColor = true;
+            this.viewSalesExport_button.UseVisualStyleBackColor = false;
             // 
             // viewSalesSettings_button
             // 
+            this.viewSalesSettings_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.viewSalesSettings_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewSalesSettings_button.FlatAppearance.BorderSize = 0;
+            this.viewSalesSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.viewSalesSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.viewSalesSettings_button.Location = new System.Drawing.Point(70, 454);
             this.viewSalesSettings_button.Name = "viewSalesSettings_button";
             this.viewSalesSettings_button.Size = new System.Drawing.Size(89, 29);
             this.viewSalesSettings_button.TabIndex = 2;
             this.viewSalesSettings_button.Text = "Settings";
-            this.viewSalesSettings_button.UseVisualStyleBackColor = true;
+            this.viewSalesSettings_button.UseVisualStyleBackColor = false;
             // 
             // viewSalesUsername_label
             // 
@@ -134,7 +142,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.panel2.Controls.Add(this.viewSalesReports_label);
             this.panel2.Controls.Add(this.viewSalesInventory_label);
             this.panel2.Controls.Add(this.viewSalesSales_label);
@@ -146,9 +154,11 @@
             // 
             // viewSalesReports_label
             // 
+            this.viewSalesReports_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.viewSalesReports_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.viewSalesReports_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewSalesReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesReports_label.ForeColor = System.Drawing.Color.White;
             this.viewSalesReports_label.Location = new System.Drawing.Point(6, 164);
             this.viewSalesReports_label.Name = "viewSalesReports_label";
             this.viewSalesReports_label.Size = new System.Drawing.Size(152, 29);
@@ -158,9 +168,11 @@
             // 
             // viewSalesInventory_label
             // 
+            this.viewSalesInventory_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.viewSalesInventory_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.viewSalesInventory_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewSalesInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesInventory_label.ForeColor = System.Drawing.Color.White;
             this.viewSalesInventory_label.Location = new System.Drawing.Point(6, 115);
             this.viewSalesInventory_label.Name = "viewSalesInventory_label";
             this.viewSalesInventory_label.Size = new System.Drawing.Size(152, 29);
@@ -170,9 +182,11 @@
             // 
             // viewSalesSales_label
             // 
+            this.viewSalesSales_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.viewSalesSales_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.viewSalesSales_label.Cursor = System.Windows.Forms.Cursors.No;
-            this.viewSalesSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesSales_label.ForeColor = System.Drawing.Color.White;
             this.viewSalesSales_label.Location = new System.Drawing.Point(6, 67);
             this.viewSalesSales_label.Name = "viewSalesSales_label";
             this.viewSalesSales_label.Size = new System.Drawing.Size(152, 29);
@@ -182,9 +196,11 @@
             // 
             // viewSalesInbox_label
             // 
+            this.viewSalesInbox_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.viewSalesInbox_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.viewSalesInbox_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewSalesInbox_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesInbox_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesInbox_label.ForeColor = System.Drawing.Color.White;
             this.viewSalesInbox_label.Location = new System.Drawing.Point(6, 18);
             this.viewSalesInbox_label.Name = "viewSalesInbox_label";
             this.viewSalesInbox_label.Size = new System.Drawing.Size(152, 29);
@@ -269,7 +285,7 @@
             // 
             // viewSalesTitleBar_panel
             // 
-            this.viewSalesTitleBar_panel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.viewSalesTitleBar_panel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.viewSalesTitleBar_panel.Controls.Add(this.viewSalesMain_label);
             this.viewSalesTitleBar_panel.Controls.Add(this.mainBack_label);
             this.viewSalesTitleBar_panel.Controls.Add(this.viewSalesMinimise_panel);
