@@ -43,7 +43,11 @@ namespace PHP_Sales_Database
 
         private void mainBack_label_Click(object sender, EventArgs e)
         {
+            var main = new main();
+            main.Location = this.Location;
+            main.StartPosition = FormStartPosition.Manual;
             this.Close();
+            main.Show();
         }
 
         private void viewSalesAdd_button_Click(object sender, EventArgs e)

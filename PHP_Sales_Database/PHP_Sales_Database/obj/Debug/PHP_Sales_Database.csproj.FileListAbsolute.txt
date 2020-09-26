@@ -36,3 +36,15 @@ B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and M
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.viewSales.resources
 B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.addSales.resources
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.addSales.resources
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.viewSales.resources
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+C:\Users\Tienesphus\Source\Repos\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
