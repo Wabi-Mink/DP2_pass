@@ -43,6 +43,21 @@ namespace PHP_Sales_Database
 
         private void mainBack_label_Click(object sender, EventArgs e)
         {
+            File.WriteAllText("salesRecords.txt", "sales_ID,date,prod_ID");
+            StreamWriter file = new StreamWriter("salesRecords.txt", true);
+            file.WriteLine();
+            for (int i = 0; i < viewSalesSales_grid.Rows.Count; i++)
+            {
+                for (int j = 0; j < viewSalesSales_grid.Rows[i].Cells.Count; j++)
+                {
+                    file.Write(viewSalesSales_grid.Rows[i].Cells[j].Value.ToString());
+                    if (j != 2) { file.Write(",");  };
+                }
+                file.WriteLine();
+            }
+            file.Flush();
+            file.Close();
+
             var main = new main();
             main.Location = this.Location;
             main.StartPosition = FormStartPosition.Manual;
@@ -94,6 +109,7 @@ namespace PHP_Sales_Database
         private void viewSalesEdit_checkbox_CheckedChanged(object sender, EventArgs e)
         {
             viewSalesSales_grid.ReadOnly = !viewSalesSales_grid.ReadOnly;
+            viewSalesSales_grid.AllowUserToDeleteRows = !viewSalesSales_grid.AllowUserToDeleteRows;
         }
     }
 }
