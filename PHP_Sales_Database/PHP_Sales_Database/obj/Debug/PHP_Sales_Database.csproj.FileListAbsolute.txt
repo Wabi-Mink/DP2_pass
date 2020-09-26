@@ -24,3 +24,12 @@ C:\Users\pokem\Desktop\DP2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\De
 C:\Users\pokem\Desktop\DP2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
 C:\Users\pokem\Desktop\DP2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 C:\Users\pokem\Desktop\DP2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+B:\Study\Semester 2 2020\SWE30010-Development Project 2 - Design, Planning and Management\main\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
