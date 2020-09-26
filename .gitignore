@@ -363,4 +363,3 @@ FodyWeavers.xsd
 *.config
 *.cache
 *.csproj
-*.cs
