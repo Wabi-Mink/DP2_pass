@@ -57,7 +57,6 @@ namespace PHP_Sales_Database
             var viewSales = new viewSales();
             viewSales.Location = this.Location;
             viewSales.StartPosition = FormStartPosition.Manual;
-            viewSales.FormClosing += delegate { this.Show(); };
             viewSales.Show();
             this.Hide();
         }

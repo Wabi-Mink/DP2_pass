@@ -51,9 +51,19 @@ namespace PHP_Sales_Database
             var addSales = new addSales();
             addSales.Location = this.Location;
             addSales.StartPosition = FormStartPosition.CenterParent;
-            addSales.ShowDialog();
-        }
 
+            //create and use a new viewSales instance to get updated info in data grid 
+            addSales.FormClosing += delegate
+            {
+                var newInstance = new viewSales();
+                newInstance.Location = this.Location;
+                newInstance.StartPosition = FormStartPosition.Manual;
+                newInstance.Show();
+                this.Close();
+            };
+
+            addSales.ShowDialog();    
+        }
         private void viewSalesTitleBar_panel_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
