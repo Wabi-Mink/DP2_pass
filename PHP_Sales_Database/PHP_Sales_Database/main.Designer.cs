@@ -44,8 +44,9 @@
             this.mainInbox_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mainTitleBar_panel = new System.Windows.Forms.Panel();
-            this.mainClose_panel = new System.Windows.Forms.Label();
+            this.mainBack_label = new System.Windows.Forms.Label();
             this.mainMinimise_panel = new System.Windows.Forms.Label();
+            this.mainClose_panel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -188,6 +189,7 @@
             this.mainSales_label.TabIndex = 3;
             this.mainSales_label.Text = "Sales";
             this.mainSales_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mainSales_label.Click += new System.EventHandler(this.mainSales_label_Click);
             // 
             // mainInbox_label
             // 
@@ -212,6 +214,7 @@
             // mainTitleBar_panel
             // 
             this.mainTitleBar_panel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.mainTitleBar_panel.Controls.Add(this.mainBack_label);
             this.mainTitleBar_panel.Controls.Add(this.mainMinimise_panel);
             this.mainTitleBar_panel.Controls.Add(this.mainClose_panel);
             this.mainTitleBar_panel.Location = new System.Drawing.Point(-1, -1);
@@ -220,16 +223,15 @@
             this.mainTitleBar_panel.TabIndex = 5;
             this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainTitleBar_panel_MouseDown);
             // 
-            // mainClose_panel
+            // mainBack_label
             // 
-            this.mainClose_panel.AutoSize = true;
-            this.mainClose_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainClose_panel.Location = new System.Drawing.Point(888, 12);
-            this.mainClose_panel.Name = "mainClose_panel";
-            this.mainClose_panel.Size = new System.Drawing.Size(17, 17);
-            this.mainClose_panel.TabIndex = 0;
-            this.mainClose_panel.Text = "X";
-            this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
+            this.mainBack_label.AutoSize = true;
+            this.mainBack_label.Cursor = System.Windows.Forms.Cursors.No;
+            this.mainBack_label.Location = new System.Drawing.Point(15, 10);
+            this.mainBack_label.Name = "mainBack_label";
+            this.mainBack_label.Size = new System.Drawing.Size(16, 17);
+            this.mainBack_label.TabIndex = 3;
+            this.mainBack_label.Text = "<";
             // 
             // mainMinimise_panel
             // 
@@ -241,6 +243,17 @@
             this.mainMinimise_panel.TabIndex = 2;
             this.mainMinimise_panel.Text = "-";
             this.mainMinimise_panel.Click += new System.EventHandler(this.mainMinimise_panel_Click);
+            // 
+            // mainClose_panel
+            // 
+            this.mainClose_panel.AutoSize = true;
+            this.mainClose_panel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainClose_panel.Location = new System.Drawing.Point(888, 12);
+            this.mainClose_panel.Name = "mainClose_panel";
+            this.mainClose_panel.Size = new System.Drawing.Size(17, 17);
+            this.mainClose_panel.TabIndex = 0;
+            this.mainClose_panel.Text = "X";
+            this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
             // 
             // main
             // 
@@ -286,5 +299,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label mainMinimise_panel;
         private System.Windows.Forms.Label mainClose_panel;
+        private System.Windows.Forms.Label mainBack_label;
     }
 }

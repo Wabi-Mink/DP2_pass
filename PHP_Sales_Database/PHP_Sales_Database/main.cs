@@ -46,5 +46,15 @@ namespace PHP_Sales_Database
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void mainSales_label_Click(object sender, EventArgs e)
+        {
+            var viewSales = new viewSales();
+            viewSales.Location = this.Location;
+            viewSales.StartPosition = FormStartPosition.Manual;
+            viewSales.FormClosing += delegate { this.Show(); };
+            viewSales.Show();
+            this.Hide();
+        }
     }
 }
