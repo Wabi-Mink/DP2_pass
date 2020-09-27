@@ -25,3 +25,17 @@ E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP2_pass\PHP_Sale
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.PHP_Sales_System.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Form2.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Success.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Form4.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Form5.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+C:\Users\Lachi\OneDrive - Swinburne University\2020 - Semester 2\DP2\Project\GitHub\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb

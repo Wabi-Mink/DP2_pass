@@ -64,5 +64,10 @@ namespace PHP_Sales_Database {
             new PHP_Sales_System().Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

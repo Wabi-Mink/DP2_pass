@@ -45,6 +45,7 @@
             this.label1.Size = new System.Drawing.Size(247, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "View/Edit Sales Records";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
