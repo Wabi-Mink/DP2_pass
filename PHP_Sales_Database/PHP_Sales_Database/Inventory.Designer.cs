@@ -1,6 +1,6 @@
 ﻿namespace PHP_Sales_Database
 {
-    partial class main
+    partial class Inventory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainWelcome_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,32 +38,21 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainReports_label = new System.Windows.Forms.Label();
             this.mainInventory_label = new System.Windows.Forms.Label();
-            this.mainSales_label = new System.Windows.Forms.Label();
+            this.viewSalesSales_label = new System.Windows.Forms.Label();
             this.mainInbox_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mainTitleBar_panel = new System.Windows.Forms.Panel();
-            this.mainMain_label = new System.Windows.Forms.Label();
+            this.Inventory_label = new System.Windows.Forms.Label();
             this.mainBack_label = new System.Windows.Forms.Label();
-            this.mainMinimise_panel = new System.Windows.Forms.Label();
-            this.mainClose_panel = new System.Windows.Forms.Label();
+            this.viewSalesMinimise_panel = new System.Windows.Forms.Label();
+            this.viewSalesClose_panel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.mainTitleBar_panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainWelcome_label
-            // 
-            this.mainWelcome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainWelcome_label.Location = new System.Drawing.Point(17, 20);
-            this.mainWelcome_label.Name = "mainWelcome_label";
-            this.mainWelcome_label.Size = new System.Drawing.Size(542, 39);
-            this.mainWelcome_label.TabIndex = 0;
-            this.mainWelcome_label.Text = "Welcome User!";
-            this.mainWelcome_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
@@ -102,7 +90,6 @@
             // 
             this.mainExport_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainExport_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainExport_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainExport_button.FlatAppearance.BorderSize = 0;
             this.mainExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
@@ -117,7 +104,6 @@
             // 
             this.mainSettings_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainSettings_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainSettings_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainSettings_button.FlatAppearance.BorderSize = 0;
             this.mainSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
@@ -151,7 +137,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.panel2.Controls.Add(this.mainReports_label);
             this.panel2.Controls.Add(this.mainInventory_label);
-            this.panel2.Controls.Add(this.mainSales_label);
+            this.panel2.Controls.Add(this.viewSalesSales_label);
             this.panel2.Controls.Add(this.mainInbox_label);
             this.panel2.Location = new System.Drawing.Point(175, 39);
             this.panel2.Name = "panel2";
@@ -177,7 +163,7 @@
             // 
             this.mainInventory_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
             this.mainInventory_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainInventory_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainInventory_label.Cursor = System.Windows.Forms.Cursors.No;
             this.mainInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainInventory_label.ForeColor = System.Drawing.Color.White;
             this.mainInventory_label.Location = new System.Drawing.Point(6, 115);
@@ -186,22 +172,21 @@
             this.mainInventory_label.TabIndex = 4;
             this.mainInventory_label.Text = "Inventory";
             this.mainInventory_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mainInventory_label.Click += new System.EventHandler(this.mainInventory_label_Click);
             // 
-            // mainSales_label
+            // viewSalesSales_label
             // 
-            this.mainSales_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
-            this.mainSales_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainSales_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainSales_label.ForeColor = System.Drawing.Color.White;
-            this.mainSales_label.Location = new System.Drawing.Point(6, 67);
-            this.mainSales_label.Name = "mainSales_label";
-            this.mainSales_label.Size = new System.Drawing.Size(152, 29);
-            this.mainSales_label.TabIndex = 3;
-            this.mainSales_label.Text = "Sales";
-            this.mainSales_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mainSales_label.Click += new System.EventHandler(this.mainSales_label_Click);
+            this.viewSalesSales_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
+            this.viewSalesSales_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewSalesSales_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewSalesSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewSalesSales_label.ForeColor = System.Drawing.Color.White;
+            this.viewSalesSales_label.Location = new System.Drawing.Point(6, 67);
+            this.viewSalesSales_label.Name = "viewSalesSales_label";
+            this.viewSalesSales_label.Size = new System.Drawing.Size(152, 29);
+            this.viewSalesSales_label.TabIndex = 3;
+            this.viewSalesSales_label.Text = "Sales";
+            this.viewSalesSales_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.viewSalesSales_label.Click += new System.EventHandler(this.viewSalesSales_label_Click);
             // 
             // mainInbox_label
             // 
@@ -219,8 +204,6 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.mainWelcome_label);
             this.panel3.Location = new System.Drawing.Point(339, 39);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(577, 543);
@@ -229,61 +212,61 @@
             // mainTitleBar_panel
             // 
             this.mainTitleBar_panel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.mainTitleBar_panel.Controls.Add(this.mainMain_label);
+            this.mainTitleBar_panel.Controls.Add(this.Inventory_label);
             this.mainTitleBar_panel.Controls.Add(this.mainBack_label);
-            this.mainTitleBar_panel.Controls.Add(this.mainMinimise_panel);
-            this.mainTitleBar_panel.Controls.Add(this.mainClose_panel);
+            this.mainTitleBar_panel.Controls.Add(this.viewSalesMinimise_panel);
+            this.mainTitleBar_panel.Controls.Add(this.viewSalesClose_panel);
             this.mainTitleBar_panel.Location = new System.Drawing.Point(-1, -1);
             this.mainTitleBar_panel.Name = "mainTitleBar_panel";
             this.mainTitleBar_panel.Size = new System.Drawing.Size(918, 43);
             this.mainTitleBar_panel.TabIndex = 5;
-            this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainTitleBar_panel_MouseDown);
+            this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.viewSalesTitleBar_panel_MouseDown);
             // 
-            // mainMain_label
+            // Inventory_label
             // 
-            this.mainMain_label.AutoSize = true;
-            this.mainMain_label.BackColor = System.Drawing.Color.Transparent;
-            this.mainMain_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMain_label.Location = new System.Drawing.Point(421, 6);
-            this.mainMain_label.Name = "mainMain_label";
-            this.mainMain_label.Size = new System.Drawing.Size(81, 30);
-            this.mainMain_label.TabIndex = 4;
-            this.mainMain_label.Text = "MAIN";
-            this.mainMain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Inventory_label.AutoSize = true;
+            this.Inventory_label.BackColor = System.Drawing.Color.Transparent;
+            this.Inventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Inventory_label.Location = new System.Drawing.Point(386, 6);
+            this.Inventory_label.Name = "Inventory_label";
+            this.Inventory_label.Size = new System.Drawing.Size(171, 30);
+            this.Inventory_label.TabIndex = 5;
+            this.Inventory_label.Text = "INVENTORY";
+            this.Inventory_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainBack_label
             // 
             this.mainBack_label.AutoSize = true;
-            this.mainBack_label.Cursor = System.Windows.Forms.Cursors.No;
-            this.mainBack_label.Location = new System.Drawing.Point(15, 10);
+            this.mainBack_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBack_label.Location = new System.Drawing.Point(12, 12);
             this.mainBack_label.Name = "mainBack_label";
             this.mainBack_label.Size = new System.Drawing.Size(16, 17);
-            this.mainBack_label.TabIndex = 3;
+            this.mainBack_label.TabIndex = 4;
             this.mainBack_label.Text = "<";
+            this.mainBack_label.Click += new System.EventHandler(this.mainBack_label_Click);
             // 
-            // mainMinimise_panel
+            // viewSalesMinimise_panel
             // 
-            this.mainMinimise_panel.AutoSize = true;
-            this.mainMinimise_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainMinimise_panel.Location = new System.Drawing.Point(865, 12);
-            this.mainMinimise_panel.Name = "mainMinimise_panel";
-            this.mainMinimise_panel.Size = new System.Drawing.Size(13, 17);
-            this.mainMinimise_panel.TabIndex = 2;
-            this.mainMinimise_panel.Text = "-";
-            this.mainMinimise_panel.Click += new System.EventHandler(this.mainMinimise_panel_Click);
+            this.viewSalesMinimise_panel.AutoSize = true;
+            this.viewSalesMinimise_panel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewSalesMinimise_panel.Location = new System.Drawing.Point(865, 12);
+            this.viewSalesMinimise_panel.Name = "viewSalesMinimise_panel";
+            this.viewSalesMinimise_panel.Size = new System.Drawing.Size(13, 17);
+            this.viewSalesMinimise_panel.TabIndex = 2;
+            this.viewSalesMinimise_panel.Text = "-";
+            this.viewSalesMinimise_panel.Click += new System.EventHandler(this.viewSalesMinimise_panel_Click);
             // 
-            // mainClose_panel
+            // viewSalesClose_panel
             // 
-            this.mainClose_panel.AutoSize = true;
-            this.mainClose_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainClose_panel.Location = new System.Drawing.Point(888, 12);
-            this.mainClose_panel.Name = "mainClose_panel";
-            this.mainClose_panel.Size = new System.Drawing.Size(17, 17);
-            this.mainClose_panel.TabIndex = 0;
-            this.mainClose_panel.Text = "X";
-            this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
+            this.viewSalesClose_panel.AutoSize = true;
+            this.viewSalesClose_panel.Cursor = System.Windows.Forms.Cursors.No;
+            this.viewSalesClose_panel.Location = new System.Drawing.Point(888, 12);
+            this.viewSalesClose_panel.Name = "viewSalesClose_panel";
+            this.viewSalesClose_panel.Size = new System.Drawing.Size(17, 17);
+            this.viewSalesClose_panel.TabIndex = 0;
+            this.viewSalesClose_panel.Text = "X";
             // 
-            // main
+            // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -293,14 +276,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "main";
-            this.Text = "main";
+            this.Name = "Inventory";
+            this.Text = "viewSales";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.mainTitleBar_panel.ResumeLayout(false);
             this.mainTitleBar_panel.PerformLayout();
             this.ResumeLayout(false);
@@ -308,8 +290,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label mainWelcome_label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -317,16 +297,16 @@
         private System.Windows.Forms.Label mainInbox_label;
         private System.Windows.Forms.Label mainReports_label;
         private System.Windows.Forms.Label mainInventory_label;
-        private System.Windows.Forms.Label mainSales_label;
+        private System.Windows.Forms.Label viewSalesSales_label;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button mainExport_button;
         private System.Windows.Forms.Button mainSettings_button;
         private System.Windows.Forms.Label mainUsername_label;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label mainMinimise_panel;
-        private System.Windows.Forms.Label mainClose_panel;
+        private System.Windows.Forms.Label viewSalesMinimise_panel;
+        private System.Windows.Forms.Label viewSalesClose_panel;
         private System.Windows.Forms.Label mainBack_label;
-        private System.Windows.Forms.Label mainMain_label;
+        private System.Windows.Forms.Label Inventory_label;
     }
 }

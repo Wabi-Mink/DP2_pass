@@ -1,6 +1,6 @@
 ﻿namespace PHP_Sales_Database
 {
-    partial class main
+    partial class Reports
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainWelcome_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -37,34 +36,23 @@
             this.mainUsername_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.mainReports_label = new System.Windows.Forms.Label();
+            this.ReportsReports_label = new System.Windows.Forms.Label();
             this.mainInventory_label = new System.Windows.Forms.Label();
             this.mainSales_label = new System.Windows.Forms.Label();
             this.mainInbox_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mainTitleBar_panel = new System.Windows.Forms.Panel();
-            this.mainMain_label = new System.Windows.Forms.Label();
+            this.ReportReport_label = new System.Windows.Forms.Label();
             this.mainBack_label = new System.Windows.Forms.Label();
-            this.mainMinimise_panel = new System.Windows.Forms.Label();
-            this.mainClose_panel = new System.Windows.Forms.Label();
+            this.viewSalesMinimise_panel = new System.Windows.Forms.Label();
+            this.viewSalesClose_panel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.mainTitleBar_panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainWelcome_label
-            // 
-            this.mainWelcome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainWelcome_label.Location = new System.Drawing.Point(17, 20);
-            this.mainWelcome_label.Name = "mainWelcome_label";
-            this.mainWelcome_label.Size = new System.Drawing.Size(542, 39);
-            this.mainWelcome_label.TabIndex = 0;
-            this.mainWelcome_label.Text = "Welcome User!";
-            this.mainWelcome_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
@@ -102,7 +90,6 @@
             // 
             this.mainExport_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainExport_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainExport_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainExport_button.FlatAppearance.BorderSize = 0;
             this.mainExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
@@ -117,7 +104,6 @@
             // 
             this.mainSettings_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainSettings_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainSettings_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
             this.mainSettings_button.FlatAppearance.BorderSize = 0;
             this.mainSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
@@ -149,7 +135,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(218)))), ((int)(((byte)(232)))));
-            this.panel2.Controls.Add(this.mainReports_label);
+            this.panel2.Controls.Add(this.ReportsReports_label);
             this.panel2.Controls.Add(this.mainInventory_label);
             this.panel2.Controls.Add(this.mainSales_label);
             this.panel2.Controls.Add(this.mainInbox_label);
@@ -158,20 +144,19 @@
             this.panel2.Size = new System.Drawing.Size(166, 543);
             this.panel2.TabIndex = 3;
             // 
-            // mainReports_label
+            // ReportsReports_label
             // 
-            this.mainReports_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
-            this.mainReports_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainReports_label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainReports_label.ForeColor = System.Drawing.Color.White;
-            this.mainReports_label.Location = new System.Drawing.Point(6, 164);
-            this.mainReports_label.Name = "mainReports_label";
-            this.mainReports_label.Size = new System.Drawing.Size(152, 29);
-            this.mainReports_label.TabIndex = 5;
-            this.mainReports_label.Text = "Reports";
-            this.mainReports_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mainReports_label.Click += new System.EventHandler(this.mainReports_label_Click);
+            this.ReportsReports_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(182)))));
+            this.ReportsReports_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ReportsReports_label.Cursor = System.Windows.Forms.Cursors.No;
+            this.ReportsReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportsReports_label.ForeColor = System.Drawing.Color.White;
+            this.ReportsReports_label.Location = new System.Drawing.Point(6, 164);
+            this.ReportsReports_label.Name = "ReportsReports_label";
+            this.ReportsReports_label.Size = new System.Drawing.Size(152, 29);
+            this.ReportsReports_label.TabIndex = 5;
+            this.ReportsReports_label.Text = "Reports";
+            this.ReportsReports_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainInventory_label
             // 
@@ -219,8 +204,6 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.mainWelcome_label);
             this.panel3.Location = new System.Drawing.Point(339, 39);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(577, 543);
@@ -229,61 +212,61 @@
             // mainTitleBar_panel
             // 
             this.mainTitleBar_panel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.mainTitleBar_panel.Controls.Add(this.mainMain_label);
+            this.mainTitleBar_panel.Controls.Add(this.ReportReport_label);
             this.mainTitleBar_panel.Controls.Add(this.mainBack_label);
-            this.mainTitleBar_panel.Controls.Add(this.mainMinimise_panel);
-            this.mainTitleBar_panel.Controls.Add(this.mainClose_panel);
+            this.mainTitleBar_panel.Controls.Add(this.viewSalesMinimise_panel);
+            this.mainTitleBar_panel.Controls.Add(this.viewSalesClose_panel);
             this.mainTitleBar_panel.Location = new System.Drawing.Point(-1, -1);
             this.mainTitleBar_panel.Name = "mainTitleBar_panel";
             this.mainTitleBar_panel.Size = new System.Drawing.Size(918, 43);
             this.mainTitleBar_panel.TabIndex = 5;
-            this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainTitleBar_panel_MouseDown);
+            this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.viewSalesTitleBar_panel_MouseDown);
             // 
-            // mainMain_label
+            // ReportReport_label
             // 
-            this.mainMain_label.AutoSize = true;
-            this.mainMain_label.BackColor = System.Drawing.Color.Transparent;
-            this.mainMain_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMain_label.Location = new System.Drawing.Point(421, 6);
-            this.mainMain_label.Name = "mainMain_label";
-            this.mainMain_label.Size = new System.Drawing.Size(81, 30);
-            this.mainMain_label.TabIndex = 4;
-            this.mainMain_label.Text = "MAIN";
-            this.mainMain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReportReport_label.AutoSize = true;
+            this.ReportReport_label.BackColor = System.Drawing.Color.Transparent;
+            this.ReportReport_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportReport_label.Location = new System.Drawing.Point(386, 6);
+            this.ReportReport_label.Name = "ReportReport_label";
+            this.ReportReport_label.Size = new System.Drawing.Size(145, 30);
+            this.ReportReport_label.TabIndex = 5;
+            this.ReportReport_label.Text = "REPORTS";
+            this.ReportReport_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainBack_label
             // 
             this.mainBack_label.AutoSize = true;
-            this.mainBack_label.Cursor = System.Windows.Forms.Cursors.No;
-            this.mainBack_label.Location = new System.Drawing.Point(15, 10);
+            this.mainBack_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBack_label.Location = new System.Drawing.Point(12, 12);
             this.mainBack_label.Name = "mainBack_label";
             this.mainBack_label.Size = new System.Drawing.Size(16, 17);
-            this.mainBack_label.TabIndex = 3;
+            this.mainBack_label.TabIndex = 4;
             this.mainBack_label.Text = "<";
+            this.mainBack_label.Click += new System.EventHandler(this.mainBack_label_Click);
             // 
-            // mainMinimise_panel
+            // viewSalesMinimise_panel
             // 
-            this.mainMinimise_panel.AutoSize = true;
-            this.mainMinimise_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainMinimise_panel.Location = new System.Drawing.Point(865, 12);
-            this.mainMinimise_panel.Name = "mainMinimise_panel";
-            this.mainMinimise_panel.Size = new System.Drawing.Size(13, 17);
-            this.mainMinimise_panel.TabIndex = 2;
-            this.mainMinimise_panel.Text = "-";
-            this.mainMinimise_panel.Click += new System.EventHandler(this.mainMinimise_panel_Click);
+            this.viewSalesMinimise_panel.AutoSize = true;
+            this.viewSalesMinimise_panel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewSalesMinimise_panel.Location = new System.Drawing.Point(865, 12);
+            this.viewSalesMinimise_panel.Name = "viewSalesMinimise_panel";
+            this.viewSalesMinimise_panel.Size = new System.Drawing.Size(13, 17);
+            this.viewSalesMinimise_panel.TabIndex = 2;
+            this.viewSalesMinimise_panel.Text = "-";
+            this.viewSalesMinimise_panel.Click += new System.EventHandler(this.viewSalesMinimise_panel_Click);
             // 
-            // mainClose_panel
+            // viewSalesClose_panel
             // 
-            this.mainClose_panel.AutoSize = true;
-            this.mainClose_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainClose_panel.Location = new System.Drawing.Point(888, 12);
-            this.mainClose_panel.Name = "mainClose_panel";
-            this.mainClose_panel.Size = new System.Drawing.Size(17, 17);
-            this.mainClose_panel.TabIndex = 0;
-            this.mainClose_panel.Text = "X";
-            this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
+            this.viewSalesClose_panel.AutoSize = true;
+            this.viewSalesClose_panel.Cursor = System.Windows.Forms.Cursors.No;
+            this.viewSalesClose_panel.Location = new System.Drawing.Point(888, 12);
+            this.viewSalesClose_panel.Name = "viewSalesClose_panel";
+            this.viewSalesClose_panel.Size = new System.Drawing.Size(17, 17);
+            this.viewSalesClose_panel.TabIndex = 0;
+            this.viewSalesClose_panel.Text = "X";
             // 
-            // main
+            // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -293,14 +276,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "main";
-            this.Text = "main";
+            this.Name = "Reports";
+            this.Text = "viewSales";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.mainTitleBar_panel.ResumeLayout(false);
             this.mainTitleBar_panel.PerformLayout();
             this.ResumeLayout(false);
@@ -308,14 +290,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label mainWelcome_label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel mainTitleBar_panel;
         private System.Windows.Forms.Label mainInbox_label;
-        private System.Windows.Forms.Label mainReports_label;
+        private System.Windows.Forms.Label ReportsReports_label;
         private System.Windows.Forms.Label mainInventory_label;
         private System.Windows.Forms.Label mainSales_label;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -324,9 +304,9 @@
         private System.Windows.Forms.Button mainSettings_button;
         private System.Windows.Forms.Label mainUsername_label;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label mainMinimise_panel;
-        private System.Windows.Forms.Label mainClose_panel;
+        private System.Windows.Forms.Label viewSalesMinimise_panel;
+        private System.Windows.Forms.Label viewSalesClose_panel;
         private System.Windows.Forms.Label mainBack_label;
-        private System.Windows.Forms.Label mainMain_label;
+        private System.Windows.Forms.Label ReportReport_label;
     }
 }
