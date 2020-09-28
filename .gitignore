@@ -365,3 +365,6 @@ FodyWeavers.xsd
 *.csproj
 PHP_Sales_Database/PHP_Sales_Database/obj/Debug/PHP_Sales_Database.csprojAssemblyReference.cache
 PHP_Sales_Database/PHP_Sales_Database/obj/Debug/PHP_Sales_Database.csproj.GenerateResource.cache
+PHP_Sales_Database/PHP_Sales_Database/obj/Debug/PHP_Sales_Database.csproj.CoreCompileInputs.cache
+*.cache
+PHP_Sales_Database/PHP_Sales_Database/obj/Debug/PHP_Sales_Database.csproj.FileListAbsolute.txt
