@@ -111,5 +111,23 @@ namespace PHP_Sales_Database
             viewSalesSales_grid.ReadOnly = !viewSalesSales_grid.ReadOnly;
             viewSalesSales_grid.AllowUserToDeleteRows = !viewSalesSales_grid.AllowUserToDeleteRows;
         }
+
+        private void mainInventory_label_Click(object sender, EventArgs e)
+        {
+            var Inventory = new Inventory();
+            Inventory.Location = this.Location;
+            Inventory.StartPosition = FormStartPosition.Manual;
+            this.Close();
+            Inventory.Show();
+        }
+
+        private void mainReports_label_Click(object sender, EventArgs e)
+        {
+            var Reports = new Reports();
+            Reports.Location = this.Location;
+            Reports.StartPosition = FormStartPosition.Manual;
+            this.Close();
+            Reports.Show();
+        }
     }
 }

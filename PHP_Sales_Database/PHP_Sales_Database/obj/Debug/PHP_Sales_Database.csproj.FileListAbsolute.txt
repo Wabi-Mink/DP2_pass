@@ -59,3 +59,17 @@ C:\Users\Jayden McQueen\Documents\Swinburne Work\DP2_pass\PHP_Sales_Database\PHP
 C:\Users\Jayden McQueen\Documents\Swinburne Work\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
 C:\Users\Jayden McQueen\Documents\Swinburne Work\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 C:\Users\Jayden McQueen\Documents\Swinburne Work\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.addSales.resources
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Reports.resources
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.viewSales.resources
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Inventory.resources
