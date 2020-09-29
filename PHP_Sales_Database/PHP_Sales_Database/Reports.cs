@@ -26,114 +26,7 @@ namespace PHP_Sales_Database
         public Reports()
         {
             InitializeComponent();
-
-
-
-          
-
-
-                
-                    DataTable dt = new DataTable();
-                    string[] lines = System.IO.File.ReadAllLines("SalesRecords.txt");
-
-                    //Console.WriteLine(data[1]);
-
-                    if (lines.Length > 0)
-                    {
-                        //first line is header
-                        string firstLine = lines[0];
-
-                        string[] headerLabels = firstLine.Split(',');
-
-                        foreach (string headerWord in headerLabels)
-                        {
-                            dt.Columns.Add(new DataColumn(headerWord));
-                        }
-
-                        //for data
-
-                        for (int r = 1; r < lines.Length; r++)
-                        {
-                            string[] dataWords = lines[r].Split(',');
-                            DataRow dr = dt.NewRow();
-                            int columnIndex = 0;
-                            foreach (string headerWord in headerLabels)
-                            {
-                                dr[headerWord] = dataWords[columnIndex++];
-                            }
-
-                     dt.Rows.Add(dr);
-
-                    
-
-
-                        }
-
-                foreach (DataRow dataRow in dt.Rows)
-                {
-                    this.chart1.Series["BarChartTrial"].Points.AddXY(dataRow[1], 1);
-
-                    foreach (var item in dataRow.ItemArray)
-                    {
-                        Console.WriteLine(item);
-
-                    }
-                }
-
-
-            }
-
-      
-                    
-
-      
-                
-
-
-
-
-
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
-
-
-
-            
-
-
-
-            
-
-
-
-
-
-
-
 
         private void mainTitleBar_panel_MouseDown(object sender, MouseEventArgs e)
         {
@@ -185,19 +78,50 @@ namespace PHP_Sales_Database
             Inventory.Show();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void Reports_Load(object sender, EventArgs e)
         {
-            
-        }
+            DataTable dt = new DataTable();
+            string[] lines = System.IO.File.ReadAllLines("SalesRecords.txt");
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-            
-        }
+            //Console.WriteLine(data[1]);
 
-        private void ReportsReports_label_Click(object sender, EventArgs e)
-        {
-           
+            if (lines.Length > 0)
+            {
+                //first line is header
+                string firstLine = lines[0];
+
+                string[] headerLabels = firstLine.Split(',');
+
+                foreach (string headerWord in headerLabels)
+                {
+                    dt.Columns.Add(new DataColumn(headerWord));
+                }
+
+                //for data
+
+                for (int r = 1; r < lines.Length; r++)
+                {
+                    string[] dataWords = lines[r].Split(',');
+                    DataRow dr = dt.NewRow();
+                    int columnIndex = 0;
+                    foreach (string headerWord in headerLabels)
+                    {
+                        dr[headerWord] = dataWords[columnIndex++];
+                    }
+                    dt.Rows.Add(dr);
+                }
+
+                foreach (DataRow dataRow in dt.Rows)
+                {
+                    this.chart1.Series["BarChartTrial"].Points.AddXY(dataRow[1], 1);
+
+                    foreach (var item in dataRow.ItemArray)
+                    {
+                        Console.WriteLine(item);
+
+                    }
+                }
+            }
         }
     }
 }
