@@ -59,9 +59,10 @@
             // mainWelcome_label
             // 
             this.mainWelcome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainWelcome_label.Location = new System.Drawing.Point(17, 20);
+            this.mainWelcome_label.Location = new System.Drawing.Point(13, 16);
+            this.mainWelcome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainWelcome_label.Name = "mainWelcome_label";
-            this.mainWelcome_label.Size = new System.Drawing.Size(542, 39);
+            this.mainWelcome_label.Size = new System.Drawing.Size(406, 32);
             this.mainWelcome_label.TabIndex = 0;
             this.mainWelcome_label.Text = "Welcome User!";
             this.mainWelcome_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,26 +76,29 @@
             this.panel1.Controls.Add(this.mainSettings_button);
             this.panel1.Controls.Add(this.mainUsername_label);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-1, 39);
+            this.panel1.Location = new System.Drawing.Point(-1, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(176, 543);
+            this.panel1.Size = new System.Drawing.Size(132, 441);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 487);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 396);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 36);
+            this.pictureBox3.Size = new System.Drawing.Size(26, 29);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 447);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 363);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(26, 29);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -106,9 +110,10 @@
             this.mainExport_button.FlatAppearance.BorderSize = 0;
             this.mainExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
-            this.mainExport_button.Location = new System.Drawing.Point(70, 493);
+            this.mainExport_button.Location = new System.Drawing.Point(52, 401);
+            this.mainExport_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainExport_button.Name = "mainExport_button";
-            this.mainExport_button.Size = new System.Drawing.Size(89, 30);
+            this.mainExport_button.Size = new System.Drawing.Size(67, 24);
             this.mainExport_button.TabIndex = 3;
             this.mainExport_button.Text = "Export";
             this.mainExport_button.UseVisualStyleBackColor = false;
@@ -121,18 +126,20 @@
             this.mainSettings_button.FlatAppearance.BorderSize = 0;
             this.mainSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
-            this.mainSettings_button.Location = new System.Drawing.Point(70, 454);
+            this.mainSettings_button.Location = new System.Drawing.Point(52, 369);
+            this.mainSettings_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainSettings_button.Name = "mainSettings_button";
-            this.mainSettings_button.Size = new System.Drawing.Size(89, 29);
+            this.mainSettings_button.Size = new System.Drawing.Size(67, 24);
             this.mainSettings_button.TabIndex = 2;
             this.mainSettings_button.Text = "Settings";
             this.mainSettings_button.UseVisualStyleBackColor = false;
             // 
             // mainUsername_label
             // 
-            this.mainUsername_label.Location = new System.Drawing.Point(15, 164);
+            this.mainUsername_label.Location = new System.Drawing.Point(11, 133);
+            this.mainUsername_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainUsername_label.Name = "mainUsername_label";
-            this.mainUsername_label.Size = new System.Drawing.Size(144, 23);
+            this.mainUsername_label.Size = new System.Drawing.Size(108, 19);
             this.mainUsername_label.TabIndex = 1;
             this.mainUsername_label.Text = "Username goes here";
             this.mainUsername_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,9 +147,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(108, 116);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -153,9 +161,10 @@
             this.panel2.Controls.Add(this.mainInventory_label);
             this.panel2.Controls.Add(this.mainSales_label);
             this.panel2.Controls.Add(this.mainInbox_label);
-            this.panel2.Location = new System.Drawing.Point(175, 39);
+            this.panel2.Location = new System.Drawing.Point(131, 32);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(166, 543);
+            this.panel2.Size = new System.Drawing.Size(124, 441);
             this.panel2.TabIndex = 3;
             // 
             // mainReports_label
@@ -165,12 +174,14 @@
             this.mainReports_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainReports_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainReports_label.ForeColor = System.Drawing.Color.White;
-            this.mainReports_label.Location = new System.Drawing.Point(6, 164);
+            this.mainReports_label.Location = new System.Drawing.Point(4, 133);
+            this.mainReports_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainReports_label.Name = "mainReports_label";
-            this.mainReports_label.Size = new System.Drawing.Size(152, 29);
+            this.mainReports_label.Size = new System.Drawing.Size(114, 24);
             this.mainReports_label.TabIndex = 5;
             this.mainReports_label.Text = "Reports";
             this.mainReports_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mainReports_label.Click += new System.EventHandler(this.mainReports_label_Click);
             // 
             // mainInventory_label
             // 
@@ -179,9 +190,10 @@
             this.mainInventory_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainInventory_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainInventory_label.ForeColor = System.Drawing.Color.White;
-            this.mainInventory_label.Location = new System.Drawing.Point(6, 115);
+            this.mainInventory_label.Location = new System.Drawing.Point(4, 93);
+            this.mainInventory_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainInventory_label.Name = "mainInventory_label";
-            this.mainInventory_label.Size = new System.Drawing.Size(152, 29);
+            this.mainInventory_label.Size = new System.Drawing.Size(114, 24);
             this.mainInventory_label.TabIndex = 4;
             this.mainInventory_label.Text = "Inventory";
             this.mainInventory_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,9 +205,10 @@
             this.mainSales_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainSales_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainSales_label.ForeColor = System.Drawing.Color.White;
-            this.mainSales_label.Location = new System.Drawing.Point(6, 67);
+            this.mainSales_label.Location = new System.Drawing.Point(4, 54);
+            this.mainSales_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainSales_label.Name = "mainSales_label";
-            this.mainSales_label.Size = new System.Drawing.Size(152, 29);
+            this.mainSales_label.Size = new System.Drawing.Size(114, 24);
             this.mainSales_label.TabIndex = 3;
             this.mainSales_label.Text = "Sales";
             this.mainSales_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,9 +221,10 @@
             this.mainInbox_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mainInbox_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainInbox_label.ForeColor = System.Drawing.Color.White;
-            this.mainInbox_label.Location = new System.Drawing.Point(6, 18);
+            this.mainInbox_label.Location = new System.Drawing.Point(4, 15);
+            this.mainInbox_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainInbox_label.Name = "mainInbox_label";
-            this.mainInbox_label.Size = new System.Drawing.Size(152, 29);
+            this.mainInbox_label.Size = new System.Drawing.Size(114, 24);
             this.mainInbox_label.TabIndex = 2;
             this.mainInbox_label.Text = "Inbox";
             this.mainInbox_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -219,10 +233,12 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.mainWelcome_label);
-            this.panel3.Location = new System.Drawing.Point(339, 39);
+            this.panel3.Location = new System.Drawing.Point(254, 32);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(577, 543);
+            this.panel3.Size = new System.Drawing.Size(433, 441);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // mainTitleBar_panel
             // 
@@ -232,8 +248,9 @@
             this.mainTitleBar_panel.Controls.Add(this.mainMinimise_panel);
             this.mainTitleBar_panel.Controls.Add(this.mainClose_panel);
             this.mainTitleBar_panel.Location = new System.Drawing.Point(-1, -1);
+            this.mainTitleBar_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainTitleBar_panel.Name = "mainTitleBar_panel";
-            this.mainTitleBar_panel.Size = new System.Drawing.Size(918, 43);
+            this.mainTitleBar_panel.Size = new System.Drawing.Size(688, 35);
             this.mainTitleBar_panel.TabIndex = 5;
             this.mainTitleBar_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainTitleBar_panel_MouseDown);
             // 
@@ -242,9 +259,10 @@
             this.mainMain_label.AutoSize = true;
             this.mainMain_label.BackColor = System.Drawing.Color.Transparent;
             this.mainMain_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMain_label.Location = new System.Drawing.Point(421, 6);
+            this.mainMain_label.Location = new System.Drawing.Point(316, 5);
+            this.mainMain_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainMain_label.Name = "mainMain_label";
-            this.mainMain_label.Size = new System.Drawing.Size(81, 30);
+            this.mainMain_label.Size = new System.Drawing.Size(71, 26);
             this.mainMain_label.TabIndex = 4;
             this.mainMain_label.Text = "MAIN";
             this.mainMain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,9 +271,10 @@
             // 
             this.mainBack_label.AutoSize = true;
             this.mainBack_label.Cursor = System.Windows.Forms.Cursors.No;
-            this.mainBack_label.Location = new System.Drawing.Point(15, 10);
+            this.mainBack_label.Location = new System.Drawing.Point(11, 8);
+            this.mainBack_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainBack_label.Name = "mainBack_label";
-            this.mainBack_label.Size = new System.Drawing.Size(16, 17);
+            this.mainBack_label.Size = new System.Drawing.Size(13, 13);
             this.mainBack_label.TabIndex = 3;
             this.mainBack_label.Text = "<";
             // 
@@ -263,9 +282,10 @@
             // 
             this.mainMinimise_panel.AutoSize = true;
             this.mainMinimise_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainMinimise_panel.Location = new System.Drawing.Point(865, 12);
+            this.mainMinimise_panel.Location = new System.Drawing.Point(649, 10);
+            this.mainMinimise_panel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainMinimise_panel.Name = "mainMinimise_panel";
-            this.mainMinimise_panel.Size = new System.Drawing.Size(13, 17);
+            this.mainMinimise_panel.Size = new System.Drawing.Size(10, 13);
             this.mainMinimise_panel.TabIndex = 2;
             this.mainMinimise_panel.Text = "-";
             this.mainMinimise_panel.Click += new System.EventHandler(this.mainMinimise_panel_Click);
@@ -274,23 +294,25 @@
             // 
             this.mainClose_panel.AutoSize = true;
             this.mainClose_panel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainClose_panel.Location = new System.Drawing.Point(888, 12);
+            this.mainClose_panel.Location = new System.Drawing.Point(666, 10);
+            this.mainClose_panel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainClose_panel.Name = "mainClose_panel";
-            this.mainClose_panel.Size = new System.Drawing.Size(17, 17);
+            this.mainClose_panel.Size = new System.Drawing.Size(14, 13);
             this.mainClose_panel.TabIndex = 0;
             this.mainClose_panel.Text = "X";
             this.mainClose_panel.Click += new System.EventHandler(this.mainClose_panel_Click);
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 582);
+            this.ClientSize = new System.Drawing.Size(686, 473);
             this.Controls.Add(this.mainTitleBar_panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "main";
             this.Text = "main";
             this.panel1.ResumeLayout(false);

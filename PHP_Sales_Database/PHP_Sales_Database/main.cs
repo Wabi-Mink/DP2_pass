@@ -60,5 +60,15 @@ namespace PHP_Sales_Database
             viewSales.Show();
             this.Hide();
         }
+
+        private void mainReports_label_Click(object sender, EventArgs e)
+        {
+            // type here this.Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
