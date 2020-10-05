@@ -129,5 +129,20 @@ namespace PHP_Sales_Database
             this.Close();
             Reports.Show();
         }
+
+        private void viewSalesSales_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void viewSalesSales_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
