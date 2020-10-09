@@ -33,7 +33,6 @@
             this.mainIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
-            this.prodIDText = new System.Windows.Forms.TextBox();
             this.idText = new System.Windows.Forms.TextBox();
             this.prodidLabel = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
@@ -42,10 +41,14 @@
             this.deleteIcon = new FontAwesome.Sharp.IconButton();
             this.closeIcon = new FontAwesome.Sharp.IconButton();
             this.doneIcon = new FontAwesome.Sharp.IconButton();
+            this.quantityBox = new System.Windows.Forms.Label();
+            this.quantityNum = new System.Windows.Forms.NumericUpDown();
+            this.prodIDText = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainIcon)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNum)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,9 +56,10 @@
             this.panel1.Controls.Add(this.mainLabel);
             this.panel1.Controls.Add(this.mainIcon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(20, 20);
+            this.panel1.Location = new System.Drawing.Point(15, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 69);
+            this.panel1.Size = new System.Drawing.Size(218, 56);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -64,9 +68,10 @@
             this.mainLabel.AutoSize = true;
             this.mainLabel.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.mainLabel.Location = new System.Drawing.Point(73, 24);
+            this.mainLabel.Location = new System.Drawing.Point(37, 20);
+            this.mainLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(197, 19);
+            this.mainLabel.Size = new System.Drawing.Size(172, 17);
             this.mainLabel.TabIndex = 3;
             this.mainLabel.Text = "Add a new Sales Record";
             // 
@@ -76,62 +81,57 @@
             this.mainIcon.ForeColor = System.Drawing.Color.Gainsboro;
             this.mainIcon.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.mainIcon.IconColor = System.Drawing.Color.Gainsboro;
-            this.mainIcon.Location = new System.Drawing.Point(34, 19);
+            this.mainIcon.IconSize = 24;
+            this.mainIcon.Location = new System.Drawing.Point(9, 20);
+            this.mainIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainIcon.Name = "mainIcon";
-            this.mainIcon.Size = new System.Drawing.Size(32, 32);
+            this.mainIcon.Size = new System.Drawing.Size(24, 26);
             this.mainIcon.TabIndex = 2;
             this.mainIcon.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.datePicker);
             this.panel2.Controls.Add(this.prodIDText);
+            this.panel2.Controls.Add(this.quantityNum);
+            this.panel2.Controls.Add(this.quantityBox);
+            this.panel2.Controls.Add(this.datePicker);
             this.panel2.Controls.Add(this.idText);
             this.panel2.Controls.Add(this.prodidLabel);
             this.panel2.Controls.Add(this.dateLabel);
             this.panel2.Controls.Add(this.idLable);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(20, 89);
+            this.panel2.Location = new System.Drawing.Point(15, 72);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 347);
+            this.panel2.Size = new System.Drawing.Size(218, 345);
             this.panel2.TabIndex = 1;
             // 
             // datePicker
             // 
             this.datePicker.Font = new System.Drawing.Font("Century Gothic", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePicker.Location = new System.Drawing.Point(53, 131);
-            this.datePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.datePicker.Location = new System.Drawing.Point(40, 106);
             this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(207, 23);
+            this.datePicker.Size = new System.Drawing.Size(156, 21);
             this.datePicker.TabIndex = 19;
             this.datePicker.Value = new System.DateTime(2020, 9, 24, 0, 0, 0, 0);
-            // 
-            // prodIDText
-            // 
-            this.prodIDText.Font = new System.Drawing.Font("Century Gothic", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prodIDText.Location = new System.Drawing.Point(53, 211);
-            this.prodIDText.Margin = new System.Windows.Forms.Padding(4);
-            this.prodIDText.Name = "prodIDText";
-            this.prodIDText.Size = new System.Drawing.Size(207, 23);
-            this.prodIDText.TabIndex = 18;
             // 
             // idText
             // 
             this.idText.Font = new System.Drawing.Font("Century Gothic", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idText.Location = new System.Drawing.Point(53, 55);
-            this.idText.Margin = new System.Windows.Forms.Padding(4);
+            this.idText.Location = new System.Drawing.Point(40, 45);
             this.idText.Name = "idText";
-            this.idText.Size = new System.Drawing.Size(207, 23);
+            this.idText.Size = new System.Drawing.Size(156, 21);
             this.idText.TabIndex = 17;
             // 
             // prodidLabel
             // 
             this.prodidLabel.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodidLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.prodidLabel.Location = new System.Drawing.Point(3, 157);
+            this.prodidLabel.Location = new System.Drawing.Point(2, 128);
+            this.prodidLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.prodidLabel.Name = "prodidLabel";
-            this.prodidLabel.Size = new System.Drawing.Size(127, 62);
+            this.prodidLabel.Size = new System.Drawing.Size(95, 50);
             this.prodidLabel.TabIndex = 6;
             this.prodidLabel.Text = "Product ID";
             this.prodidLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,9 +140,10 @@
             // 
             this.dateLabel.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dateLabel.Location = new System.Drawing.Point(3, 81);
+            this.dateLabel.Location = new System.Drawing.Point(2, 66);
+            this.dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(127, 62);
+            this.dateLabel.Size = new System.Drawing.Size(95, 50);
             this.dateLabel.TabIndex = 5;
             this.dateLabel.Text = "Sale Date";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,9 +152,10 @@
             // 
             this.idLable.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idLable.ForeColor = System.Drawing.Color.Gainsboro;
-            this.idLable.Location = new System.Drawing.Point(3, 3);
+            this.idLable.Location = new System.Drawing.Point(2, 2);
+            this.idLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLable.Name = "idLable";
-            this.idLable.Size = new System.Drawing.Size(127, 62);
+            this.idLable.Size = new System.Drawing.Size(95, 50);
             this.idLable.TabIndex = 4;
             this.idLable.Text = "Sale ID";
             this.idLable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,9 +166,10 @@
             this.panel4.Controls.Add(this.closeIcon);
             this.panel4.Controls.Add(this.doneIcon);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(20, 336);
+            this.panel4.Location = new System.Drawing.Point(15, 336);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 100);
+            this.panel4.Size = new System.Drawing.Size(218, 81);
             this.panel4.TabIndex = 3;
             // 
             // deleteIcon
@@ -179,10 +182,11 @@
             this.deleteIcon.IconChar = FontAwesome.Sharp.IconChar.Trash;
             this.deleteIcon.IconColor = System.Drawing.Color.Gainsboro;
             this.deleteIcon.IconSize = 50;
-            this.deleteIcon.Location = new System.Drawing.Point(97, 0);
+            this.deleteIcon.Location = new System.Drawing.Point(73, 0);
+            this.deleteIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteIcon.Name = "deleteIcon";
             this.deleteIcon.Rotation = 0D;
-            this.deleteIcon.Size = new System.Drawing.Size(96, 100);
+            this.deleteIcon.Size = new System.Drawing.Size(72, 81);
             this.deleteIcon.TabIndex = 3;
             this.deleteIcon.UseVisualStyleBackColor = false;
             this.deleteIcon.Click += new System.EventHandler(this.deleteIcon_Click);
@@ -197,10 +201,11 @@
             this.closeIcon.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.closeIcon.IconColor = System.Drawing.Color.Gainsboro;
             this.closeIcon.IconSize = 50;
-            this.closeIcon.Location = new System.Drawing.Point(193, 0);
+            this.closeIcon.Location = new System.Drawing.Point(145, 0);
+            this.closeIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.closeIcon.Name = "closeIcon";
             this.closeIcon.Rotation = 0D;
-            this.closeIcon.Size = new System.Drawing.Size(97, 100);
+            this.closeIcon.Size = new System.Drawing.Size(73, 81);
             this.closeIcon.TabIndex = 2;
             this.closeIcon.UseVisualStyleBackColor = false;
             this.closeIcon.Click += new System.EventHandler(this.closeIcon_Click);
@@ -216,34 +221,74 @@
             this.doneIcon.IconColor = System.Drawing.Color.Gainsboro;
             this.doneIcon.IconSize = 50;
             this.doneIcon.Location = new System.Drawing.Point(0, 0);
+            this.doneIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.doneIcon.Name = "doneIcon";
             this.doneIcon.Rotation = 0D;
-            this.doneIcon.Size = new System.Drawing.Size(97, 100);
+            this.doneIcon.Size = new System.Drawing.Size(73, 81);
             this.doneIcon.TabIndex = 0;
             this.doneIcon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.doneIcon.UseVisualStyleBackColor = false;
             this.doneIcon.Click += new System.EventHandler(this.doneIcon_Click);
             // 
+            // quantityBox
+            // 
+            this.quantityBox.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantityBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.quantityBox.Location = new System.Drawing.Point(2, 195);
+            this.quantityBox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.quantityBox.Name = "quantityBox";
+            this.quantityBox.Size = new System.Drawing.Size(95, 28);
+            this.quantityBox.TabIndex = 20;
+            this.quantityBox.Text = "Quantity";
+            this.quantityBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // quantityNum
+            // 
+            this.quantityNum.Location = new System.Drawing.Point(40, 226);
+            this.quantityNum.Name = "quantityNum";
+            this.quantityNum.Size = new System.Drawing.Size(156, 20);
+            this.quantityNum.TabIndex = 21;
+            // 
+            // prodIDText
+            // 
+            this.prodIDText.FormattingEnabled = true;
+            this.prodIDText.Items.AddRange(new object[] {
+            "PD000001",
+            "PD000002",
+            "PD000003",
+            "PD000004",
+            "PD000005",
+            "PD000006",
+            "PD000007",
+            "PD000008"});
+            this.prodIDText.Location = new System.Drawing.Point(40, 171);
+            this.prodIDText.Name = "prodIDText";
+            this.prodIDText.Size = new System.Drawing.Size(156, 21);
+            this.prodIDText.TabIndex = 22;
+            // 
             // addSales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(330, 456);
+            this.ClientSize = new System.Drawing.Size(248, 433);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "addSales";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.Text = "Report";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.addSales_FormClosing);
+            this.Load += new System.EventHandler(this.addSales_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainIcon)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -255,7 +300,6 @@
         private FontAwesome.Sharp.IconPictureBox mainIcon;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DateTimePicker datePicker;
-        private System.Windows.Forms.TextBox prodIDText;
         private System.Windows.Forms.TextBox idText;
         private System.Windows.Forms.Label prodidLabel;
         private System.Windows.Forms.Label dateLabel;
@@ -264,5 +308,8 @@
         private FontAwesome.Sharp.IconButton deleteIcon;
         private FontAwesome.Sharp.IconButton doneIcon;
         private FontAwesome.Sharp.IconButton closeIcon;
+        private System.Windows.Forms.NumericUpDown quantityNum;
+        private System.Windows.Forms.Label quantityBox;
+        private System.Windows.Forms.ComboBox prodIDText;
     }
 }

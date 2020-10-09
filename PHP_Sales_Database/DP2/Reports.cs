@@ -17,34 +17,128 @@ namespace DP2
             InitializeComponent();
         }
 
-        private void Reports_Load(object sender, EventArgs e)
-        {
+        private void generateMonthlyReport() {
+            string[] linesSales = System.IO.File.ReadAllLines("salesRecords.txt");
+            string[] linesProducts = System.IO.File.ReadAllLines("productRecords.txt");
+
+            //filter sales by needed year
+            string yearNeeded = dropDownListYear.SelectedItem.ToString();
+            List<string> salesNeeded = new List<string>();
+            foreach (string row in linesSales) {
+                //getting the year and month from salesRecords.txt
+                string[] rowDetails = row.Split(',');
+                string[] dateDetails = rowDetails[1].Split('/');
+
+                if (dateDetails.Length > 1) {
+                    if (dateDetails[2].ToString() == yearNeeded) {
+                        salesNeeded.Add(row);
+                    }
+                }
+            }
+
+            //total values for the final report
+            double[] PD1Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD2Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD3Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD4Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD5Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD6Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD7Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] PD8Total = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+            //get prices and names for each product in the store
+            Dictionary<string, string> products = new Dictionary<string, string>();
+            List<string> productNames = new List<string>();
+            foreach (string product in linesProducts) {
+                string[] rowDetails = product.Split(',');
+                products.Add(rowDetails[0], rowDetails[3]);
+                productNames.Add(rowDetails[1]);
+            }
+
+            //calculate total prices for the report for each month
+            foreach (string sale in salesNeeded) {
+                string[] saleDetails = sale.Split(',');
+                string[] dateDetails = saleDetails[1].Split('/');
+                switch (saleDetails[2].ToString()) {
+                    case "PD000001":
+                        PD1Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000002":
+                        PD2Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000003":
+                        PD3Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000004":
+                        PD4Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000005":
+                        PD5Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000006":
+                        PD6Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000007":
+                        PD7Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    case "PD000008":
+                        PD8Total[int.Parse(dateDetails[1]) - 1] += int.Parse(saleDetails[3]) * double.Parse(products[saleDetails[2]]);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            //input calculated data into the report
+            List<double[]> productPricesFinal = new List<double[]>();
+            productPricesFinal.Add(PD1Total);
+            productPricesFinal.Add(PD2Total);
+            productPricesFinal.Add(PD3Total);
+            productPricesFinal.Add(PD4Total);
+            productPricesFinal.Add(PD5Total);
+            productPricesFinal.Add(PD6Total);
+            productPricesFinal.Add(PD7Total);
+            productPricesFinal.Add(PD8Total);
+            int rowIndex = 0;
+            foreach (double[] productFinal in productPricesFinal) {
+                if (reportGrid.Rows.Count != productNames.Count - 1) {
+                    reportGrid.Rows.Add();
+                }
+                for (int i = 0; i < 12; i++) {
+                    reportGrid[i + 1, rowIndex].Value = "$"+ productFinal[i].ToString();
+                }
+                rowIndex++;
+            }
+
+            //input product names into the report
+            for (int i = 0; i < reportGrid.Rows.Count; i++) {
+                reportGrid[0, i].Value = productNames[i+1];
+            }
+        }
+
+        private void generateSalesGraph() {
             DataTable dt = new DataTable();
-            string[] lines = System.IO.File.ReadAllLines("SalesRecords.txt");
+            string[] lines = System.IO.File.ReadAllLines("salesRecords.txt");
 
             //Console.WriteLine(data[1]);
 
-            if (lines.Length > 0)
-            {
+            if (lines.Length > 0) {
                 //first line is header
                 string firstLine = lines[0];
 
                 string[] headerLabels = firstLine.Split(',');
 
-                foreach (string headerWord in headerLabels)
-                {
+                foreach (string headerWord in headerLabels) {
                     dt.Columns.Add(new DataColumn(headerWord));
                 }
 
                 //for data
 
-                for (int r = 1; r < lines.Length; r++)
-                {
+                for (int r = 1; r < lines.Length; r++) {
                     string[] dataWords = lines[r].Split(',');
                     DataRow dr = dt.NewRow();
                     int columnIndex = 0;
-                    foreach (string headerWord in headerLabels)
-                    {
+                    foreach (string headerWord in headerLabels) {
                         dr[headerWord] = dataWords[columnIndex++];
                     }
                     dt.Rows.Add(dr);
@@ -61,46 +155,35 @@ namespace DP2
                 int PD7count = 0;
                 int PD8count = 0;
 
-                foreach (DataRow datarow in dt.Rows)
-                {
+                foreach (DataRow datarow in dt.Rows) {
 
-                    if (datarow[2].Equals("PD000001"))
-                    {
-                        PD1count++;
+                    if (datarow[2].Equals("PD000001")) {
+                        PD1count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000002"))
-                    {
-                        PD2count++;
+                    if (datarow[2].Equals("PD000002")) {
+                        PD2count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000003"))
-                    {
-                        PD3count++;
+                    if (datarow[2].Equals("PD000003")) {
+                        PD3count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000004"))
-                    {
-                        PD4count++;
+                    if (datarow[2].Equals("PD000004")) {
+                        PD4count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000005"))
-                    {
-                        PD5count++;
+                    if (datarow[2].Equals("PD000005")) {
+                        PD5count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000006"))
-                    {
-                        PD6count++;
+                    if (datarow[2].Equals("PD000006")) {
+                        PD6count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000007"))
-                    {
-                        PD7count++;
+                    if (datarow[2].Equals("PD000007")) {
+                        PD7count += int.Parse(datarow[3].ToString());
                     }
-                    if (datarow[2].Equals("PD000008"))
-                    {
-                        PD8count++;
+                    if (datarow[2].Equals("PD000008")) {
+                        PD8count += int.Parse(datarow[3].ToString());
                     }
                 }
 
-                //Creating Reports
-
-                //Report 1
+                //Creating Report
                 this.chart1.Series["Number of Product Sales"].Points.AddXY(1, PD1count);
                 this.chart1.Series["Number of Product Sales"].Points.AddXY(2, PD2count);
                 this.chart1.Series["Number of Product Sales"].Points.AddXY(3, PD3count);
@@ -111,36 +194,36 @@ namespace DP2
                 this.chart1.Series["Number of Product Sales"].Points.AddXY(8, PD8count);
 
                 chart1.ChartAreas[0].AxisX.Title = "Product ID's";
-                chart1.ChartAreas[0].AxisY.Title = "Numbers Sold";
-
-                //Report 2
-
-
-                //this.chart1.ChartAreas[1].AxisX.Title = "Month";
-                //this.chart1.ChartAreas[1].AxisY.Title = "Sales Number";
-
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jan", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Feb", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Mar", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Apr", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("May", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jun", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jul", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Aug", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Sep", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Oct", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Nov", 1);
-                //this.chart1.Series["Sales Per Month"].Points.AddXY("Dec", 1);
-                //other
+                chart1.ChartAreas[0].AxisY.Title = "Quantity Sold";
 
                 dt.TableName = "TableName";
                 dt.WriteXml("dtSchema.xml");
-
-                //foreach (var item in dataRow.ItemArray)
-                //{
-                //    Console.WriteLine(item);
-                //}
             }
+        }
+
+        private void Reports_Load(object sender, EventArgs e)
+        {
+            generateSalesGraph();
+            generateMonthlyReport();
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            //all time sales button
+            chart1.Visible = true;
+            reportGrid.Visible = false;
+            yearLabel.Visible = false;
+            dropDownListYear.Visible = false;
+        }
+
+        private void monthySalesReport_Click(object sender, EventArgs e) {
+            chart1.Visible = false;
+            reportGrid.Visible = true;
+            yearLabel.Visible = true;
+            dropDownListYear.Visible = true;
+        }
+
+        private void dropDownListYear_SelectedIndexChanged(object sender, EventArgs e) {
+            generateMonthlyReport();
         }
     }
 }

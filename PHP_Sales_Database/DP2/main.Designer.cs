@@ -39,18 +39,18 @@
             this.inboxButton = new FontAwesome.Sharp.IconButton();
             this.menuButton = new System.Windows.Forms.Button();
             this.userPanel = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.mainLabel = new System.Windows.Forms.Label();
             this.mainIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childPanel = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.logo = new System.Windows.Forms.PictureBox();
             this.mainPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.userPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -63,8 +63,9 @@
             this.mainPanel.Controls.Add(this.userPanel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(200, 555);
+            this.mainPanel.Size = new System.Drawing.Size(150, 456);
             this.mainPanel.TabIndex = 0;
             // 
             // settingsButton
@@ -78,10 +79,11 @@
             this.settingsButton.IconChar = FontAwesome.Sharp.IconChar.Cogs;
             this.settingsButton.IconColor = System.Drawing.Color.Gainsboro;
             this.settingsButton.IconSize = 45;
-            this.settingsButton.Location = new System.Drawing.Point(0, 413);
+            this.settingsButton.Location = new System.Drawing.Point(0, 340);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsButton.Name = "settingsButton";
             this.settingsButton.Rotation = 0D;
-            this.settingsButton.Size = new System.Drawing.Size(200, 71);
+            this.settingsButton.Size = new System.Drawing.Size(150, 58);
             this.settingsButton.TabIndex = 4;
             this.settingsButton.Text = "SETTINGS";
             this.settingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -98,10 +100,11 @@
             this.exportButton.IconChar = FontAwesome.Sharp.IconChar.Download;
             this.exportButton.IconColor = System.Drawing.Color.Gainsboro;
             this.exportButton.IconSize = 45;
-            this.exportButton.Location = new System.Drawing.Point(0, 484);
+            this.exportButton.Location = new System.Drawing.Point(0, 398);
+            this.exportButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exportButton.Name = "exportButton";
             this.exportButton.Rotation = 0D;
-            this.exportButton.Size = new System.Drawing.Size(200, 71);
+            this.exportButton.Size = new System.Drawing.Size(150, 58);
             this.exportButton.TabIndex = 3;
             this.exportButton.Text = "EXPORT";
             this.exportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -115,9 +118,10 @@
             this.panel3.Controls.Add(this.salesButton);
             this.panel3.Controls.Add(this.inboxButton);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 238);
+            this.panel3.Location = new System.Drawing.Point(0, 194);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 164);
+            this.panel3.Size = new System.Drawing.Size(150, 132);
             this.panel3.TabIndex = 2;
             // 
             // inventoryButton
@@ -133,11 +137,12 @@
             this.inventoryButton.IconColor = System.Drawing.Color.Gainsboro;
             this.inventoryButton.IconSize = 25;
             this.inventoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inventoryButton.Location = new System.Drawing.Point(0, 82);
+            this.inventoryButton.Location = new System.Drawing.Point(0, 66);
+            this.inventoryButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.inventoryButton.Padding = new System.Windows.Forms.Padding(26, 0, 15, 0);
             this.inventoryButton.Rotation = 0D;
-            this.inventoryButton.Size = new System.Drawing.Size(200, 41);
+            this.inventoryButton.Size = new System.Drawing.Size(150, 33);
             this.inventoryButton.TabIndex = 3;
             this.inventoryButton.Text = "Inventory";
             this.inventoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,11 +163,12 @@
             this.reportsButton.IconColor = System.Drawing.Color.Gainsboro;
             this.reportsButton.IconSize = 25;
             this.reportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.reportsButton.Location = new System.Drawing.Point(0, 123);
+            this.reportsButton.Location = new System.Drawing.Point(0, 99);
+            this.reportsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reportsButton.Name = "reportsButton";
-            this.reportsButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.reportsButton.Padding = new System.Windows.Forms.Padding(26, 0, 15, 0);
             this.reportsButton.Rotation = 0D;
-            this.reportsButton.Size = new System.Drawing.Size(200, 41);
+            this.reportsButton.Size = new System.Drawing.Size(150, 33);
             this.reportsButton.TabIndex = 2;
             this.reportsButton.Text = "Reports";
             this.reportsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,11 +189,12 @@
             this.salesButton.IconColor = System.Drawing.Color.Gainsboro;
             this.salesButton.IconSize = 25;
             this.salesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.salesButton.Location = new System.Drawing.Point(0, 41);
+            this.salesButton.Location = new System.Drawing.Point(0, 33);
+            this.salesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesButton.Name = "salesButton";
-            this.salesButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.salesButton.Padding = new System.Windows.Forms.Padding(26, 0, 15, 0);
             this.salesButton.Rotation = 0D;
-            this.salesButton.Size = new System.Drawing.Size(200, 41);
+            this.salesButton.Size = new System.Drawing.Size(150, 33);
             this.salesButton.TabIndex = 1;
             this.salesButton.Text = "Sales";
             this.salesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,12 +216,13 @@
             this.inboxButton.IconSize = 25;
             this.inboxButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.inboxButton.Location = new System.Drawing.Point(0, 0);
+            this.inboxButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inboxButton.Name = "inboxButton";
-            this.inboxButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.inboxButton.Padding = new System.Windows.Forms.Padding(26, 0, 15, 0);
             this.inboxButton.Rotation = 0D;
-            this.inboxButton.Size = new System.Drawing.Size(200, 41);
+            this.inboxButton.Size = new System.Drawing.Size(150, 33);
             this.inboxButton.TabIndex = 0;
-            this.inboxButton.Text = "Inbox";
+            this.inboxButton.Text = "Alerts";
             this.inboxButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.inboxButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.inboxButton.UseVisualStyleBackColor = false;
@@ -228,10 +236,11 @@
             this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menuButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.menuButton.Location = new System.Drawing.Point(0, 193);
+            this.menuButton.Location = new System.Drawing.Point(0, 157);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.menuButton.Size = new System.Drawing.Size(200, 45);
+            this.menuButton.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.menuButton.Size = new System.Drawing.Size(150, 37);
             this.menuButton.TabIndex = 1;
             this.menuButton.Text = "Menu";
             this.menuButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,9 +253,22 @@
             this.userPanel.Controls.Add(this.logo);
             this.userPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.userPanel.Location = new System.Drawing.Point(0, 0);
+            this.userPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userPanel.Name = "userPanel";
-            this.userPanel.Size = new System.Drawing.Size(200, 193);
+            this.userPanel.Size = new System.Drawing.Size(150, 157);
             this.userPanel.TabIndex = 0;
+            // 
+            // logo
+            // 
+            this.logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logo.Image = global::DP2.Properties.Resources.PHPlogo;
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(150, 157);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
             // 
             // panel4
             // 
@@ -254,9 +276,10 @@
             this.panel4.Controls.Add(this.mainLabel);
             this.panel4.Controls.Add(this.mainIcon);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
+            this.panel4.Location = new System.Drawing.Point(150, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(682, 57);
+            this.panel4.Size = new System.Drawing.Size(513, 46);
             this.panel4.TabIndex = 1;
             // 
             // mainLabel
@@ -264,9 +287,10 @@
             this.mainLabel.AutoSize = true;
             this.mainLabel.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.mainLabel.Location = new System.Drawing.Point(59, 20);
+            this.mainLabel.Location = new System.Drawing.Point(44, 16);
+            this.mainLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(56, 19);
+            this.mainLabel.Size = new System.Drawing.Size(50, 17);
             this.mainLabel.TabIndex = 1;
             this.mainLabel.Text = "Home";
             // 
@@ -276,9 +300,11 @@
             this.mainIcon.ForeColor = System.Drawing.Color.Gainsboro;
             this.mainIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.mainIcon.IconColor = System.Drawing.Color.Gainsboro;
-            this.mainIcon.Location = new System.Drawing.Point(21, 12);
+            this.mainIcon.IconSize = 24;
+            this.mainIcon.Location = new System.Drawing.Point(16, 14);
+            this.mainIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainIcon.Name = "mainIcon";
-            this.mainIcon.Size = new System.Drawing.Size(32, 32);
+            this.mainIcon.Size = new System.Drawing.Size(24, 26);
             this.mainIcon.TabIndex = 0;
             this.mainIcon.TabStop = false;
             // 
@@ -286,9 +312,10 @@
             // 
             this.childPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.childPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childPanel.Location = new System.Drawing.Point(200, 57);
+            this.childPanel.Location = new System.Drawing.Point(150, 46);
+            this.childPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.childPanel.Name = "childPanel";
-            this.childPanel.Size = new System.Drawing.Size(682, 498);
+            this.childPanel.Size = new System.Drawing.Size(513, 410);
             this.childPanel.TabIndex = 2;
             // 
             // notifyIcon1
@@ -296,35 +323,26 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // logo
-            // 
-            this.logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logo.Image = global::DP2.Properties.Resources.PHPlogo;
-            this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(200, 193);
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 555);
+            this.ClientSize = new System.Drawing.Size(663, 456);
             this.Controls.Add(this.childPanel);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.mainPanel);
-            this.MinimumSize = new System.Drawing.Size(900, 600);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(679, 495);
             this.Name = "main";
             this.Text = "PHP_SRePS";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.userPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }

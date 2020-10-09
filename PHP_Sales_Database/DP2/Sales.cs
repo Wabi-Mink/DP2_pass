@@ -20,7 +20,7 @@ namespace DP2
 
         private void save()
         {
-            File.WriteAllText("salesRecords.txt", "sales_ID,date,prod_ID");
+            File.WriteAllText("salesRecords.txt", "sales_ID,date,prod_ID,quantity");
             StreamWriter file = new StreamWriter("salesRecords.txt", true);
             file.WriteLine();
             for (int i = 0; i < salesGrid.Rows.Count; i++)
@@ -28,7 +28,7 @@ namespace DP2
                 for (int j = 0; j < salesGrid.Rows[i].Cells.Count; j++)
                 {
                     file.Write(salesGrid.Rows[i].Cells[j].Value.ToString());
-                    if (j != 2) { file.Write(","); };
+                    if (j != 3) { file.Write(","); };
                 }
                 file.WriteLine();
             }
