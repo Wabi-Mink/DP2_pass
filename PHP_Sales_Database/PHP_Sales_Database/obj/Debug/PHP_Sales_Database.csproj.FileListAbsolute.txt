@@ -73,3 +73,18 @@ C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Datab
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Inventory.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.addSales.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Inventory.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Login.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Reports.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.viewSales.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
