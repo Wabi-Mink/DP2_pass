@@ -41,5 +41,10 @@ namespace PHP_Sales_Database
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

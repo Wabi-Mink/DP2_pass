@@ -88,3 +88,9 @@ E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pa
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\users.mdf
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\users_log.ldf
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\Dapper.dll
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\Dapper.xml
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.SignUp.resources
+E:\Google Drives\Primary\Study\Uni Work\2020\S2\SWE30010\local\DP_pass_S2\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CopyComplete

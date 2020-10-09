@@ -34,8 +34,8 @@ namespace PHP_Sales_Database
         private void login(object sender, EventArgs e)
         {
             this.Hide();
-            main LM = new main();
-            LM.Show();
+            main Main = new main();
+            Main.Show();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -60,7 +60,8 @@ namespace PHP_Sales_Database
 
         private void signUp(object sender, EventArgs e)
         {
-
+            SignUp signUp  = new SignUp();
+            signUp.Show();
         }
     }
 }
