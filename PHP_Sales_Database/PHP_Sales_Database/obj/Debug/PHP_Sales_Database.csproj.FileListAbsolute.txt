@@ -73,3 +73,17 @@ C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Datab
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
 C:\Users\Tienesphus\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Inventory.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe.config
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.exe
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\bin\Debug\PHP_Sales_Database.pdb
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csprojAssemblyReference.cache
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.addSales.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Inventory.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Reports.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.viewSales.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.main.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.Properties.Resources.resources
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.GenerateResource.cache
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.csproj.CoreCompileInputs.cache
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.exe
+C:\Users\Lachi\OneDrive\Documents\GitHub\DP2_pass\PHP_Sales_Database\PHP_Sales_Database\obj\Debug\PHP_Sales_Database.pdb
