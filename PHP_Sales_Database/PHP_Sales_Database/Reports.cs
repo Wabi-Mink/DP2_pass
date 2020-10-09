@@ -183,22 +183,22 @@ namespace PHP_Sales_Database
 
                 
 
-                this.chart1.ChartAreas[1].AxisX.Title = "Month";
-                this.chart1.ChartAreas[1].AxisY.Title = "Sales Number";
+                //this.chart1.ChartAreas[1].AxisX.Title = "Month";
+                //this.chart1.ChartAreas[1].AxisY.Title = "Sales Number";
                 
                 
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Jan", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Feb", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Mar", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Apr", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("May", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Jun", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Jul", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Aug", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Sep", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Oct", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Nov", 1);
-                this.chart1.Series["Sales Per Month"].Points.AddXY("Dec", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jan", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Feb", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Mar", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Apr", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("May", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jun", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Jul", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Aug", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Sep", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Oct", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Nov", 1);
+                //this.chart1.Series["Sales Per Month"].Points.AddXY("Dec", 1);
 
 
 

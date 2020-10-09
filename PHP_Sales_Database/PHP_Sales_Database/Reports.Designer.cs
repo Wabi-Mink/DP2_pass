@@ -29,11 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -73,7 +70,7 @@
             this.panel1.Controls.Add(this.mainUsername_label);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(132, 441);
             this.panel1.TabIndex = 2;
@@ -82,7 +79,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox3.Location = new System.Drawing.Point(22, 396);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(26, 29);
             this.pictureBox3.TabIndex = 5;
@@ -92,7 +89,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox2.Location = new System.Drawing.Point(22, 363);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(26, 29);
             this.pictureBox2.TabIndex = 4;
@@ -106,7 +103,7 @@
             this.mainExport_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainExport_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.mainExport_button.Location = new System.Drawing.Point(52, 401);
-            this.mainExport_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainExport_button.Margin = new System.Windows.Forms.Padding(2);
             this.mainExport_button.Name = "mainExport_button";
             this.mainExport_button.Size = new System.Drawing.Size(67, 24);
             this.mainExport_button.TabIndex = 3;
@@ -121,7 +118,7 @@
             this.mainSettings_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainSettings_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
             this.mainSettings_button.Location = new System.Drawing.Point(52, 369);
-            this.mainSettings_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainSettings_button.Margin = new System.Windows.Forms.Padding(2);
             this.mainSettings_button.Name = "mainSettings_button";
             this.mainSettings_button.Size = new System.Drawing.Size(67, 24);
             this.mainSettings_button.TabIndex = 2;
@@ -142,7 +139,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox1.Location = new System.Drawing.Point(11, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(108, 116);
             this.pictureBox1.TabIndex = 0;
@@ -156,7 +153,7 @@
             this.panel2.Controls.Add(this.mainSales_label);
             this.panel2.Controls.Add(this.mainInbox_label);
             this.panel2.Location = new System.Drawing.Point(131, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(124, 441);
             this.panel2.TabIndex = 3;
@@ -227,7 +224,7 @@
             // 
             this.panel3.Controls.Add(this.chart1);
             this.panel3.Location = new System.Drawing.Point(254, 33);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(433, 440);
             this.panel3.TabIndex = 4;
@@ -235,9 +232,7 @@
             // chart1
             // 
             chartArea1.Name = "ChartArea2";
-            chartArea2.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
             series1.BorderColor = System.Drawing.Color.White;
@@ -245,10 +240,7 @@
             series1.Color = System.Drawing.Color.MediumBlue;
             series1.LegendText = "Number of\\nItem Sales";
             series1.Name = "Number of Product Sales";
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Sales Per Month";
             this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(433, 441);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -258,14 +250,7 @@
             title1.Name = "Title1";
             title1.Text = "Product Item Sales";
             title1.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
-            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title2.DockedToChartArea = "ChartArea1";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "Title2";
-            title2.Text = "Sales per Month - 2020";
-            title2.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
             this.chart1.Titles.Add(title1);
-            this.chart1.Titles.Add(title2);
             // 
             // mainTitleBar_panel
             // 
@@ -275,7 +260,7 @@
             this.mainTitleBar_panel.Controls.Add(this.viewSalesMinimise_panel);
             this.mainTitleBar_panel.Controls.Add(this.viewSalesClose_panel);
             this.mainTitleBar_panel.Location = new System.Drawing.Point(-1, -1);
-            this.mainTitleBar_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainTitleBar_panel.Margin = new System.Windows.Forms.Padding(2);
             this.mainTitleBar_panel.Name = "mainTitleBar_panel";
             this.mainTitleBar_panel.Size = new System.Drawing.Size(688, 35);
             this.mainTitleBar_panel.TabIndex = 5;
@@ -339,7 +324,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reports";
             this.Text = "viewSales";
             this.Load += new System.EventHandler(this.Reports_Load);
