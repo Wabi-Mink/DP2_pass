@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,6 +117,36 @@ namespace DP2
             }
         }
 
+        private void exportReport() {
+            string yearReport = dropDownListYear.SelectedItem.ToString();
+            StreamWriter file;
+            switch (yearReport) {
+                case "2018":
+                    file = new StreamWriter("MonthlySalesReport2018.csv", false);
+                    break;
+                case "2019":
+                    file = new StreamWriter("MonthlySalesReport2019.csv", false);
+                    break;
+                case "2020":
+                    file = new StreamWriter("MonthlySalesReport2020.csv", false);
+                    break;
+                default:
+                    file = new StreamWriter("MonthlySalesReport2020.csv", false);
+                    break;
+            }
+
+            file.WriteLine("Product,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec");
+            for (int i = 0; i < reportGrid.Rows.Count; i++) {
+                for (int j = 0; j < reportGrid.Rows[i].Cells.Count; j++) {
+                    file.Write(reportGrid.Rows[i].Cells[j].Value.ToString());
+                    if (j != 12) { file.Write(","); };
+                }
+                file.WriteLine();
+            }
+            file.Flush();
+            file.Close();
+        }
+
         private void generateSalesGraph() {
             DataTable dt = new DataTable();
             string[] lines = System.IO.File.ReadAllLines("salesRecords.txt");
@@ -213,6 +244,7 @@ namespace DP2
             reportGrid.Visible = false;
             yearLabel.Visible = false;
             dropDownListYear.Visible = false;
+            exportButton.Visible = false;
         }
 
         private void monthySalesReport_Click(object sender, EventArgs e) {
@@ -220,10 +252,15 @@ namespace DP2
             reportGrid.Visible = true;
             yearLabel.Visible = true;
             dropDownListYear.Visible = true;
+            exportButton.Visible = true;
         }
 
         private void dropDownListYear_SelectedIndexChanged(object sender, EventArgs e) {
             generateMonthlyReport();
+        }
+
+        private void exportButton_Click(object sender, EventArgs e) {
+            exportReport();
         }
     }
 }

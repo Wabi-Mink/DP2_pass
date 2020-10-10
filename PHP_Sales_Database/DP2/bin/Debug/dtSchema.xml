@@ -169,9 +169,15 @@
     <quantity>5</quantity>
   </TableName>
   <TableName>
-    <sales_ID>PD000000029</sales_ID>
+    <sales_ID>S000000029</sales_ID>
     <date>9/01/2020</date>
     <prod_ID>PD000002</prod_ID>
     <quantity>2</quantity>
+  </TableName>
+  <TableName>
+    <sales_ID>S000000030</sales_ID>
+    <date>10/10/2020</date>
+    <prod_ID>PD000002</prod_ID>
+    <quantity>1</quantity>
   </TableName>
 </DocumentElement>
