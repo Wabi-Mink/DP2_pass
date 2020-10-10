@@ -95,5 +95,10 @@ namespace DP2
             open(new Inventory());
         }
 
+        private void ordersButton_Click(object sender, EventArgs e)
+        {
+            HighlightButton(sender, Color.Gainsboro);
+            changeMain(ordersButton);
+        }
     }
 }

@@ -41,6 +41,7 @@
             // 
             this.productGrid.AllowUserToAddRows = false;
             this.productGrid.AllowUserToDeleteRows = false;
+            this.productGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.prod_ID,
@@ -48,68 +49,74 @@
             this.prescription,
             this.price,
             this.num_in_stock});
-            this.productGrid.Dock = System.Windows.Forms.DockStyle.Top;
-            this.productGrid.Location = new System.Drawing.Point(15, 16);
-            this.productGrid.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
-            this.productGrid.MinimumSize = new System.Drawing.Size(482, 309);
+            this.productGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productGrid.Location = new System.Drawing.Point(20, 20);
+            this.productGrid.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
+            this.productGrid.MinimumSize = new System.Drawing.Size(643, 380);
             this.productGrid.Name = "productGrid";
             this.productGrid.ReadOnly = true;
             this.productGrid.RowHeadersWidth = 5;
             this.productGrid.RowTemplate.Height = 24;
-            this.productGrid.Size = new System.Drawing.Size(482, 309);
+            this.productGrid.Size = new System.Drawing.Size(643, 452);
             this.productGrid.StandardTab = true;
             this.productGrid.TabIndex = 1;
             // 
             // prod_ID
             // 
+            this.prod_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.prod_ID.HeaderText = "prod_ID";
             this.prod_ID.MinimumWidth = 6;
             this.prod_ID.Name = "prod_ID";
             this.prod_ID.ReadOnly = true;
-            this.prod_ID.Width = 80;
+            this.prod_ID.Width = 87;
             // 
             // prod_name
             // 
+            this.prod_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.prod_name.HeaderText = "prod_name";
             this.prod_name.MinimumWidth = 6;
             this.prod_name.Name = "prod_name";
             this.prod_name.ReadOnly = true;
-            this.prod_name.Width = 150;
+            this.prod_name.Width = 109;
             // 
             // prescription
             // 
+            this.prescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.prescription.HeaderText = "prescription";
             this.prescription.MinimumWidth = 6;
             this.prescription.Name = "prescription";
             this.prescription.ReadOnly = true;
-            this.prescription.Width = 80;
+            this.prescription.Width = 111;
             // 
             // price
             // 
+            this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.price.FillWeight = 80F;
             this.price.HeaderText = "price";
+            this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.ReadOnly = true;
-            this.price.Width = 80;
+            this.price.Width = 68;
             // 
             // num_in_stock
             // 
+            this.num_in_stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.num_in_stock.HeaderText = "num_in_stock";
+            this.num_in_stock.MinimumWidth = 6;
             this.num_in_stock.Name = "num_in_stock";
             this.num_in_stock.ReadOnly = true;
-            this.num_in_stock.Width = 80;
             // 
             // Inventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(512, 400);
+            this.ClientSize = new System.Drawing.Size(683, 492);
             this.Controls.Add(this.productGrid);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Inventory";
-            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "Report";
             this.Load += new System.EventHandler(this.Inventory_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.productGrid)).EndInit();
