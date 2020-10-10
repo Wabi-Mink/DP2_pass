@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.salesGrid = new System.Windows.Forms.DataGridView();
-            this.addButton = new System.Windows.Forms.Button();
-            this.viewSalesEdit_checkbox = new System.Windows.Forms.CheckBox();
             this.sales_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sales_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addButton = new System.Windows.Forms.Button();
+            this.viewSalesEdit_checkbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.salesGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +60,41 @@
             this.salesGrid.StandardTab = true;
             this.salesGrid.TabIndex = 0;
             this.salesGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salesGrid_CellContentClick);
+            // 
+            // sales_id
+            // 
+            this.sales_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.sales_id.HeaderText = "sales_id";
+            this.sales_id.MinimumWidth = 6;
+            this.sales_id.Name = "sales_id";
+            this.sales_id.ReadOnly = true;
+            this.sales_id.Width = 89;
+            // 
+            // sales_date
+            // 
+            this.sales_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.sales_date.HeaderText = "sales_date";
+            this.sales_date.MinimumWidth = 6;
+            this.sales_date.Name = "sales_date";
+            this.sales_date.ReadOnly = true;
+            this.sales_date.Width = 106;
+            // 
+            // product_id
+            // 
+            this.product_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.product_id.HeaderText = "product_id";
+            this.product_id.MinimumWidth = 6;
+            this.product_id.Name = "product_id";
+            this.product_id.ReadOnly = true;
+            this.product_id.Width = 104;
+            // 
+            // quantity
+            // 
+            this.quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.quantity.HeaderText = "quantity";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
             // 
             // addButton
             // 
@@ -98,41 +133,6 @@
             this.viewSalesEdit_checkbox.Text = "READ ONLY";
             this.viewSalesEdit_checkbox.UseVisualStyleBackColor = true;
             this.viewSalesEdit_checkbox.CheckedChanged += new System.EventHandler(this.viewSalesEdit_checkbox_CheckedChanged);
-            // 
-            // sales_id
-            // 
-            this.sales_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.sales_id.HeaderText = "sales_id";
-            this.sales_id.MinimumWidth = 6;
-            this.sales_id.Name = "sales_id";
-            this.sales_id.ReadOnly = true;
-            this.sales_id.Width = 89;
-            // 
-            // sales_date
-            // 
-            this.sales_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.sales_date.HeaderText = "sales_date";
-            this.sales_date.MinimumWidth = 6;
-            this.sales_date.Name = "sales_date";
-            this.sales_date.ReadOnly = true;
-            this.sales_date.Width = 106;
-            // 
-            // product_id
-            // 
-            this.product_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.product_id.HeaderText = "product_id";
-            this.product_id.MinimumWidth = 6;
-            this.product_id.Name = "product_id";
-            this.product_id.ReadOnly = true;
-            this.product_id.Width = 104;
-            // 
-            // quantity
-            // 
-            this.quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.quantity.HeaderText = "quantity";
-            this.quantity.MinimumWidth = 6;
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
             // 
             // Sales
             // 

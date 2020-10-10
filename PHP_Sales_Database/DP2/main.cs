@@ -94,11 +94,20 @@ namespace DP2
             changeMain(inventoryButton);
             open(new Inventory());
         }
-
         private void ordersButton_Click(object sender, EventArgs e)
         {
             HighlightButton(sender, Color.Gainsboro);
             changeMain(ordersButton);
+            open(new Orders());
+        }
+        private void logo_Click(object sender, EventArgs e)
+        {
+            if (activiteForm != null)
+            {
+                activiteForm.Close();
+                mainIcon.IconChar = IconChar.Home;
+                mainLabel.Text = "Homepage";
+            } 
         }
     }
 }

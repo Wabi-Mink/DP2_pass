@@ -33,8 +33,9 @@
             this.settingsButton = new FontAwesome.Sharp.IconButton();
             this.aboutButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.inventoryButton = new FontAwesome.Sharp.IconButton();
+            this.ordersButton = new FontAwesome.Sharp.IconButton();
             this.reportsButton = new FontAwesome.Sharp.IconButton();
+            this.inventoryButton = new FontAwesome.Sharp.IconButton();
             this.salesButton = new FontAwesome.Sharp.IconButton();
             this.inboxButton = new FontAwesome.Sharp.IconButton();
             this.menuButton = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.mainIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childPanel = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.ordersButton = new FontAwesome.Sharp.IconButton();
             this.mainPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.userPanel.SuspendLayout();
@@ -126,31 +126,31 @@
             this.panel3.Size = new System.Drawing.Size(200, 205);
             this.panel3.TabIndex = 2;
             // 
-            // inventoryButton
+            // ordersButton
             // 
-            this.inventoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.inventoryButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.inventoryButton.FlatAppearance.BorderSize = 0;
-            this.inventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventoryButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.inventoryButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryButton.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.inventoryButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
-            this.inventoryButton.IconColor = System.Drawing.Color.Gainsboro;
-            this.inventoryButton.IconSize = 25;
-            this.inventoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inventoryButton.Location = new System.Drawing.Point(0, 82);
-            this.inventoryButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.inventoryButton.Rotation = 0D;
-            this.inventoryButton.Size = new System.Drawing.Size(200, 41);
-            this.inventoryButton.TabIndex = 3;
-            this.inventoryButton.Text = "Inventory";
-            this.inventoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inventoryButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.inventoryButton.UseVisualStyleBackColor = false;
-            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
+            this.ordersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.ordersButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ordersButton.FlatAppearance.BorderSize = 0;
+            this.ordersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ordersButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ordersButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ordersButton.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.ordersButton.IconChar = FontAwesome.Sharp.IconChar.Wallet;
+            this.ordersButton.IconColor = System.Drawing.Color.Gainsboro;
+            this.ordersButton.IconSize = 25;
+            this.ordersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ordersButton.Location = new System.Drawing.Point(0, 164);
+            this.ordersButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ordersButton.Name = "ordersButton";
+            this.ordersButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.ordersButton.Rotation = 0D;
+            this.ordersButton.Size = new System.Drawing.Size(200, 41);
+            this.ordersButton.TabIndex = 4;
+            this.ordersButton.Text = "Orders";
+            this.ordersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ordersButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ordersButton.UseVisualStyleBackColor = false;
+            this.ordersButton.Click += new System.EventHandler(this.ordersButton_Click);
             // 
             // reportsButton
             // 
@@ -177,6 +177,32 @@
             this.reportsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.reportsButton.UseVisualStyleBackColor = false;
             this.reportsButton.Click += new System.EventHandler(this.reportsButton_Click);
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.inventoryButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.inventoryButton.FlatAppearance.BorderSize = 0;
+            this.inventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventoryButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.inventoryButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryButton.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.inventoryButton.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            this.inventoryButton.IconColor = System.Drawing.Color.Gainsboro;
+            this.inventoryButton.IconSize = 25;
+            this.inventoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryButton.Location = new System.Drawing.Point(0, 82);
+            this.inventoryButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.inventoryButton.Rotation = 0D;
+            this.inventoryButton.Size = new System.Drawing.Size(200, 41);
+            this.inventoryButton.TabIndex = 3;
+            this.inventoryButton.Text = "Inventory";
+            this.inventoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.inventoryButton.UseVisualStyleBackColor = false;
+            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
             // 
             // salesButton
             // 
@@ -262,6 +288,7 @@
             // 
             // logo
             // 
+            this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logo.Image = global::DP2.Properties.Resources.PHPlogo;
             this.logo.Location = new System.Drawing.Point(0, 0);
@@ -271,6 +298,7 @@
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // panel4
             // 
@@ -287,24 +315,28 @@
             // mainLabel
             // 
             this.mainLabel.AutoSize = true;
-            this.mainLabel.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainLabel.Font = new System.Drawing.Font("Century Gothic", 18.15652F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.mainLabel.Location = new System.Drawing.Point(59, 20);
+            this.mainLabel.Location = new System.Drawing.Point(59, 9);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(56, 19);
+            this.mainLabel.Size = new System.Drawing.Size(182, 37);
             this.mainLabel.TabIndex = 1;
-            this.mainLabel.Text = "Home";
+            this.mainLabel.Text = "Homepage";
+            this.mainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainIcon
             // 
             this.mainIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(26)))), ((int)(((byte)(37)))));
+            this.mainIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainIcon.ForeColor = System.Drawing.Color.Gainsboro;
             this.mainIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.mainIcon.IconColor = System.Drawing.Color.Gainsboro;
-            this.mainIcon.Location = new System.Drawing.Point(21, 17);
+            this.mainIcon.IconSize = 53;
+            this.mainIcon.Location = new System.Drawing.Point(0, 0);
             this.mainIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainIcon.Name = "mainIcon";
-            this.mainIcon.Size = new System.Drawing.Size(32, 32);
+            this.mainIcon.Size = new System.Drawing.Size(53, 57);
+            this.mainIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.mainIcon.TabIndex = 0;
             this.mainIcon.TabStop = false;
             // 
@@ -323,32 +355,6 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // ordersButton
-            // 
-            this.ordersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ordersButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ordersButton.FlatAppearance.BorderSize = 0;
-            this.ordersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ordersButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.ordersButton.Font = new System.Drawing.Font("Century Gothic", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ordersButton.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.ordersButton.IconChar = FontAwesome.Sharp.IconChar.Wallet;
-            this.ordersButton.IconColor = System.Drawing.Color.Gainsboro;
-            this.ordersButton.IconSize = 25;
-            this.ordersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordersButton.Location = new System.Drawing.Point(0, 164);
-            this.ordersButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ordersButton.Name = "ordersButton";
-            this.ordersButton.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.ordersButton.Rotation = 0D;
-            this.ordersButton.Size = new System.Drawing.Size(200, 41);
-            this.ordersButton.TabIndex = 4;
-            this.ordersButton.Text = "Orders";
-            this.ordersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordersButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ordersButton.UseVisualStyleBackColor = false;
-            this.ordersButton.Click += new System.EventHandler(this.ordersButton_Click);
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,6 +363,7 @@
             this.Controls.Add(this.childPanel);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.mainPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1300, 800);
             this.Name = "main";

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.monthySalesReport = new System.Windows.Forms.Button();
             this.allTimeSalesButton = new System.Windows.Forms.Button();
@@ -61,28 +61,28 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea2";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea2";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series2.BorderColor = System.Drawing.Color.White;
-            series2.ChartArea = "ChartArea2";
-            series2.Color = System.Drawing.Color.MediumBlue;
-            series2.LegendText = "Number of\\nItem Sales";
-            series2.Name = "Number of Product Sales";
-            this.chart1.Series.Add(series2);
+            series1.BorderColor = System.Drawing.Color.White;
+            series1.ChartArea = "ChartArea2";
+            series1.Color = System.Drawing.Color.MediumBlue;
+            series1.LegendText = "Number of\\nItem Sales";
+            series1.Name = "Number of Product Sales";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(1042, 581);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title2.BackColor = System.Drawing.Color.Transparent;
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "Title1";
-            title2.Text = "Product Item Sales";
-            title2.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
-            this.chart1.Titles.Add(title2);
+            title1.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title1.BackColor = System.Drawing.Color.Transparent;
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Product Item Sales";
+            title1.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
+            this.chart1.Titles.Add(title1);
             this.chart1.Visible = false;
             // 
             // monthySalesReport
@@ -213,99 +213,99 @@
             // Jan
             // 
             this.Jan.HeaderText = "Jan";
-            this.Jan.MinimumWidth = 6;
+            this.Jan.MinimumWidth = 70;
             this.Jan.Name = "Jan";
             this.Jan.ReadOnly = true;
-            this.Jan.Width = 60;
+            this.Jan.Width = 70;
             // 
             // Feb
             // 
             this.Feb.HeaderText = "Feb";
-            this.Feb.MinimumWidth = 6;
+            this.Feb.MinimumWidth = 70;
             this.Feb.Name = "Feb";
             this.Feb.ReadOnly = true;
-            this.Feb.Width = 60;
+            this.Feb.Width = 70;
             // 
             // Mar
             // 
             this.Mar.FillWeight = 80F;
             this.Mar.HeaderText = "Mar";
-            this.Mar.MinimumWidth = 6;
+            this.Mar.MinimumWidth = 70;
             this.Mar.Name = "Mar";
             this.Mar.ReadOnly = true;
-            this.Mar.Width = 60;
+            this.Mar.Width = 70;
             // 
             // Apr
             // 
             this.Apr.HeaderText = "Apr";
-            this.Apr.MinimumWidth = 6;
+            this.Apr.MinimumWidth = 70;
             this.Apr.Name = "Apr";
             this.Apr.ReadOnly = true;
-            this.Apr.Width = 60;
+            this.Apr.Width = 70;
             // 
             // May
             // 
             this.May.HeaderText = "May";
-            this.May.MinimumWidth = 6;
+            this.May.MinimumWidth = 70;
             this.May.Name = "May";
             this.May.ReadOnly = true;
-            this.May.Width = 60;
+            this.May.Width = 70;
             // 
             // Jun
             // 
             this.Jun.HeaderText = "Jun";
-            this.Jun.MinimumWidth = 6;
+            this.Jun.MinimumWidth = 70;
             this.Jun.Name = "Jun";
             this.Jun.ReadOnly = true;
-            this.Jun.Width = 60;
+            this.Jun.Width = 70;
             // 
             // Jul
             // 
             this.Jul.HeaderText = "Jul";
-            this.Jul.MinimumWidth = 6;
+            this.Jul.MinimumWidth = 70;
             this.Jul.Name = "Jul";
             this.Jul.ReadOnly = true;
-            this.Jul.Width = 60;
+            this.Jul.Width = 70;
             // 
             // Aug
             // 
             this.Aug.HeaderText = "Aug";
-            this.Aug.MinimumWidth = 6;
+            this.Aug.MinimumWidth = 70;
             this.Aug.Name = "Aug";
             this.Aug.ReadOnly = true;
-            this.Aug.Width = 60;
+            this.Aug.Width = 70;
             // 
             // Sep
             // 
             this.Sep.HeaderText = "Sep";
-            this.Sep.MinimumWidth = 6;
+            this.Sep.MinimumWidth = 70;
             this.Sep.Name = "Sep";
             this.Sep.ReadOnly = true;
-            this.Sep.Width = 60;
+            this.Sep.Width = 70;
             // 
             // Oct
             // 
             this.Oct.HeaderText = "Oct";
-            this.Oct.MinimumWidth = 6;
+            this.Oct.MinimumWidth = 70;
             this.Oct.Name = "Oct";
             this.Oct.ReadOnly = true;
-            this.Oct.Width = 60;
+            this.Oct.Width = 70;
             // 
             // Nov
             // 
             this.Nov.HeaderText = "Nov";
-            this.Nov.MinimumWidth = 6;
+            this.Nov.MinimumWidth = 70;
             this.Nov.Name = "Nov";
             this.Nov.ReadOnly = true;
-            this.Nov.Width = 60;
+            this.Nov.Width = 70;
             // 
             // Dec
             // 
             this.Dec.HeaderText = "Dec";
-            this.Dec.MinimumWidth = 6;
+            this.Dec.MinimumWidth = 70;
             this.Dec.Name = "Dec";
             this.Dec.ReadOnly = true;
-            this.Dec.Width = 60;
+            this.Dec.Width = 70;
             // 
             // Reports
             // 
