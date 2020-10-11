@@ -107,6 +107,7 @@ namespace DP2
                 activiteForm.Close();
                 mainIcon.IconChar = IconChar.Home;
                 mainLabel.Text = "Homepage";
+                DisableButton();
             } 
         }
     }

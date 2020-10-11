@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.mainPanel = new System.Windows.Forms.Panel();
             this.settingsButton = new FontAwesome.Sharp.IconButton();
             this.aboutButton = new FontAwesome.Sharp.IconButton();
@@ -319,7 +320,7 @@
             this.mainLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.mainLabel.Location = new System.Drawing.Point(59, 9);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(182, 37);
+            this.mainLabel.Size = new System.Drawing.Size(176, 36);
             this.mainLabel.TabIndex = 1;
             this.mainLabel.Text = "Homepage";
             this.mainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -364,6 +365,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1300, 800);
             this.Name = "main";
