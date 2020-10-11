@@ -25,6 +25,7 @@ namespace DP2
             //filter sales by needed year
             string yearNeeded = dropDownListYear.SelectedItem.ToString();
             List<string> salesNeeded = new List<string>();
+
             foreach (string row in linesSales) {
                 //getting the year and month from salesRecords.txt
                 string[] rowDetails = row.Split(',');
@@ -116,7 +117,6 @@ namespace DP2
                 reportGrid[0, i].Value = productNames[i+1];
             }
         }
-
         private void exportReport() {
             string yearReport = dropDownListYear.SelectedItem.ToString();
             StreamWriter file;
@@ -146,7 +146,6 @@ namespace DP2
             file.Flush();
             file.Close();
         }
-
         private void generateSalesGraph() {
             DataTable dt = new DataTable();
             string[] lines = System.IO.File.ReadAllLines("salesRecords.txt");
@@ -231,13 +230,11 @@ namespace DP2
                 dt.WriteXml("dtSchema.xml");
             }
         }
-
         private void Reports_Load(object sender, EventArgs e)
         {
             generateSalesGraph();
             generateMonthlyReport();
         }
-
         private void button3_Click(object sender, EventArgs e) {
             //all time sales button
             chart1.Visible = true;
@@ -246,7 +243,6 @@ namespace DP2
             dropDownListYear.Visible = false;
             exportButton.Visible = false;
         }
-
         private void monthySalesReport_Click(object sender, EventArgs e) {
             chart1.Visible = false;
             reportGrid.Visible = true;
@@ -254,11 +250,9 @@ namespace DP2
             dropDownListYear.Visible = true;
             exportButton.Visible = true;
         }
-
         private void dropDownListYear_SelectedIndexChanged(object sender, EventArgs e) {
             generateMonthlyReport();
         }
-
         private void exportButton_Click(object sender, EventArgs e) {
             exportReport();
         }
