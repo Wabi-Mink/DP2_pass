@@ -56,5 +56,10 @@ namespace PHP_Sales_Database
             addSalesSaleDate_picker.Value = DateTime.Now;
             addSalesProdID_textBox.Text = "";
         }
+
+        private void addSalesSaleID_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

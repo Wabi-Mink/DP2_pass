@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ID_No = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RePassword = new System.Windows.Forms.TextBox();
+            this.register = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,13 +49,13 @@
             this.label1.Text = "New User Registration";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // ID_No
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.ID_No.Location = new System.Drawing.Point(123, 87);
+            this.ID_No.Name = "ID_No";
+            this.ID_No.Size = new System.Drawing.Size(266, 20);
+            this.ID_No.TabIndex = 1;
+            this.ID_No.TextChanged += new System.EventHandler(this.txt_ID);
             // 
             // label2
             // 
@@ -76,14 +76,14 @@
             this.label3.Text = "PASSWORD";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.UseSystemPasswordChar = true;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.Password.Location = new System.Drawing.Point(123, 127);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(266, 20);
+            this.Password.TabIndex = 3;
+            this.Password.UseSystemPasswordChar = true;
+            this.Password.TextChanged += new System.EventHandler(this.txt_password);
             // 
             // label4
             // 
@@ -94,36 +94,37 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Re-PASSWORD";
             // 
-            // textBox3
+            // RePassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(123, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.RePassword.Location = new System.Drawing.Point(123, 169);
+            this.RePassword.Name = "RePassword";
+            this.RePassword.Size = new System.Drawing.Size(266, 20);
+            this.RePassword.TabIndex = 5;
+            this.RePassword.UseSystemPasswordChar = true;
+            this.RePassword.TextChanged += new System.EventHandler(this.txt_rePassword);
             // 
-            // button1
+            // register
             // 
-            this.button1.Location = new System.Drawing.Point(211, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.register.Location = new System.Drawing.Point(211, 224);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(178, 23);
+            this.register.TabIndex = 9;
+            this.register.Text = "Register";
+            this.register.UseVisualStyleBackColor = true;
+            this.register.Click += new System.EventHandler(this.btn_register);
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 324);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.register);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.RePassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Password);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ID_No);
             this.Controls.Add(this.label1);
             this.Name = "SignUp";
             this.Text = "SignUp";
@@ -135,12 +136,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ID_No;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox RePassword;
+        private System.Windows.Forms.Button register;
     }
 }

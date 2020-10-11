@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PHP_Sales_Database
 {
@@ -33,9 +34,43 @@ namespace PHP_Sales_Database
         }
         private void login(object sender, EventArgs e)
         {
-            this.Hide();
-            main Main = new main();
-            Main.Show();
+            int i = 0;
+            string line;
+            bool match = false;
+
+            //initialises the new registaation data into one string array
+            string login_attempt = ID_No.Text + "," + Password.Text;
+
+            //Open the registeredUsers.txt file
+            StreamReader file = new StreamReader("registeredUsers.txt", true);
+
+            while ((line = file.ReadLine()) != null)
+            {
+                if(line == login_attempt)
+                {
+                    match = true;
+                    break;
+                }
+                i++;
+            }
+
+
+            if (match)
+            {
+                file.Close();
+                this.Hide();
+                main Main = new main();
+                Main.Show();
+                //reset textBox and date picker
+                ID_No.Text = "";
+                Password.Text = "";
+            }
+            else
+            {
+                var msgBox = MessageBox.Show("Password or User ID is wrong!", "Error",
+                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Password.Text = "";
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
