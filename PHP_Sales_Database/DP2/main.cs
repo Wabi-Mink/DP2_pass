@@ -23,6 +23,7 @@ namespace DP2
         }
         private void open(Form form)
         {
+            Encryption.EncryptStringToString("Hello World!");
             if (activiteForm != null)
                 activiteForm.Close();
             activiteForm = form;
