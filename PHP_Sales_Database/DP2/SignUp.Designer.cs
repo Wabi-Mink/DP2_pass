@@ -47,7 +47,6 @@
             this.label1.Size = new System.Drawing.Size(357, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "New User Registration";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ID_No
             // 
@@ -55,7 +54,6 @@
             this.ID_No.Name = "ID_No";
             this.ID_No.Size = new System.Drawing.Size(266, 20);
             this.ID_No.TabIndex = 1;
-            this.ID_No.TextChanged += new System.EventHandler(this.txt_ID);
             // 
             // label2
             // 
@@ -74,7 +72,6 @@
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "PASSWORD";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Password
             // 
@@ -83,7 +80,6 @@
             this.Password.Size = new System.Drawing.Size(266, 20);
             this.Password.TabIndex = 3;
             this.Password.UseSystemPasswordChar = true;
-            this.Password.TextChanged += new System.EventHandler(this.txt_password);
             // 
             // label4
             // 
@@ -101,7 +97,6 @@
             this.RePassword.Size = new System.Drawing.Size(266, 20);
             this.RePassword.TabIndex = 5;
             this.RePassword.UseSystemPasswordChar = true;
-            this.RePassword.TextChanged += new System.EventHandler(this.txt_rePassword);
             // 
             // register
             // 

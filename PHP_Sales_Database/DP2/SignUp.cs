@@ -18,31 +18,6 @@ namespace DP2
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_ID(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_password(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_register(object sender, EventArgs e)
         {
             //initialises the new registaation data into one string array
@@ -86,11 +61,6 @@ namespace DP2
 
             file.Flush();
             file.Close();
-        }
-
-        private void txt_rePassword(object sender, EventArgs e)
-        {
-
         }
     }
 }
