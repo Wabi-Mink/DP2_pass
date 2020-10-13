@@ -1,0 +1,9 @@
+prod_ID,desc,presc,price,num_in_stock
+PD000001,Melatonin 90 Tablets (Homeopathic Formula),Y,24.5,0
+PD000002,Astragalus 90 Vegan Capsules,N,29.95,2
+PD000003,Microgynon 30 ED Tablets 4 x 28,Y,26.99,0
+PD000004,Odourless Fish Oil 2000mg - Source of Omega-3 - 200 Capsules,N,37.99,0
+PD000005,ids Smart Vita Gummies Multi Vitamin & Vegies 60 Gummies,N,14.99,0
+PD000006,Vita Gummies Adult Womens Multivitamin 100,N,19.95,0
+PD000007,Ultiboost Co Enzyme Q10 150mg 180 Capsules,N,96.99,0
+PD000008,Ultiboost Sleep 100 Tablets,N,43.99,0
