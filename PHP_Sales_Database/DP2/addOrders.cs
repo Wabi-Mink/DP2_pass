@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DP2
 {
-    public partial class addSales : Form
+    public partial class addOrders : Form
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -21,7 +21,7 @@ namespace DP2
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public addSales()
+        public addOrders()
         {
             InitializeComponent();
             datePicker.Value = DateTime.Now;
@@ -42,35 +42,30 @@ namespace DP2
             for (int i = 1; i < linesProducts.Length; i++) {
                 string[] productSplit = linesProducts[i].Split(',');
                 if (productSplit[0] == prodID) {
-                    if ((int.Parse(productSplit[4]) - int.Parse(quantity)) >= 0 ) {
-                        productSplit[4] = (int.Parse(productSplit[4]) - int.Parse(quantity)).ToString();
+                        productSplit[4] = (int.Parse(productSplit[4]) + int.Parse(quantity)).ToString();
                         string alteredEntry = productSplit[0] + "," + productSplit[1] + "," + productSplit[2] + "," + productSplit[3] + "," + productSplit[4];
                         linesProducts[i] = alteredEntry;
                         writeToFile("productRecords.txt", linesProducts);
                         return true;
                     }
-                    else {
-                        return false;
-                    }
                 }
-            }
             return false;
         }
 
         private void doneIcon_Click(object sender, EventArgs e)
         {
             //initialises the new sales data into one string array
-            string[] sale_record = { idText.Text,
+            string[] order_record = { idText.Text,
                                     datePicker.Text,
                                     prodIDText.Text,
                                     quantityNum.Text};
 
             //check and change the inventory of the item purchased (if able) so that its value goes down.
             if (alterInventoryStock(prodIDText.Text, quantityNum.Text)) {
-                //outputs new sales record to the salesRecords.txt file
-                StreamWriter file = new StreamWriter("salesRecords.txt", true);
-                for (int i = 0; i < sale_record.Length; i++) {
-                    file.Write(sale_record[i]);
+                //outputs new sales record to the orderRecords.txt file
+                StreamWriter file = new StreamWriter("orderRecords.txt", true);
+                for (int i = 0; i < order_record.Length; i++) {
+                    file.Write(order_record[i]);
                     if (i != 3) {
                         file.Write(",");
                     } else {
@@ -81,15 +76,13 @@ namespace DP2
                 file.Close();
 
                 //Show a success message box
-                var msgBox = MessageBox.Show("Added", "Success",
+                var msgBox = MessageBox.Show("AddedL Item stock has been increased.", "Success",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 deleteIcon_Click(sender, e);
             }
             else {
-                //Show a success message box
-                var msgBox = MessageBox.Show("Not enough product stock left. Sale cannot be added.", "Error",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
 
             enterCurrentID();
@@ -99,9 +92,7 @@ namespace DP2
 
         private void deleteIcon_Click(object sender, EventArgs e)
         {
-            enterCurrentID();
-            datePicker.Value = DateTime.Now;
-            prodIDText.Text = "";
+            
         }
 
         private void closeIcon_Click(object sender, EventArgs e)
@@ -122,8 +113,8 @@ namespace DP2
         {
         }
         private void enterCurrentID() {
-            string[] sales = System.IO.File.ReadAllLines("salesRecords.txt");
-            idText.Text = "S0000000" + sales.Length.ToString();
+            string[] orders = System.IO.File.ReadAllLines("orderRecords.txt");
+            idText.Text = "OD" + orders.Length.ToString();
         }
 
         private void addSales_Load(object sender, EventArgs e) {

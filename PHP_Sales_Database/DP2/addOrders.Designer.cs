@@ -1,6 +1,6 @@
 ﻿namespace DP2
 {
-    partial class addSales
+    partial class addOrders
     {
         /// <summary>
         /// Required designer variable.
@@ -70,9 +70,9 @@
             this.mainLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.mainLabel.Location = new System.Drawing.Point(49, 25);
             this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(212, 19);
+            this.mainLabel.Size = new System.Drawing.Size(151, 19);
             this.mainLabel.TabIndex = 3;
-            this.mainLabel.Text = "Add a new Sales Record";
+            this.mainLabel.Text = "Add a new Order";
             // 
             // panel2
             // 
@@ -183,7 +183,7 @@
             this.idLable.Name = "idLable";
             this.idLable.Size = new System.Drawing.Size(127, 62);
             this.idLable.TabIndex = 4;
-            this.idLable.Text = "Sale ID";
+            this.idLable.Text = "Order ID";
             this.idLable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
@@ -269,7 +269,7 @@
             this.mainIcon.TabIndex = 2;
             this.mainIcon.TabStop = false;
             // 
-            // addSales
+            // addOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -280,7 +280,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "addSales";
+            this.Name = "addOrders";
             this.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
             this.Text = "Report";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.addSales_FormClosing);

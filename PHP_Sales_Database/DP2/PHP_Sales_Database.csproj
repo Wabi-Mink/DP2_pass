@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOrders.Designer.cs">
+      <DependentUpon>addOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="addOrders.resx">
+      <DependentUpon>addOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
