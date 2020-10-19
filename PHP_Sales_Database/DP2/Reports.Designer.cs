@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.monthySalesReport = new System.Windows.Forms.Button();
             this.allTimeSalesButton = new System.Windows.Forms.Button();
             this.reportGrid = new System.Windows.Forms.DataGridView();
-            this.yearLabel = new System.Windows.Forms.Label();
-            this.dropDownListYear = new System.Windows.Forms.ComboBox();
-            this.exportButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +48,11 @@
             this.Oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearLabel = new System.Windows.Forms.Label();
+            this.dropDownListYear = new System.Windows.Forms.ComboBox();
+            this.exportButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportGrid)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,36 +61,34 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea2";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea2";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series1.BorderColor = System.Drawing.Color.White;
-            series1.ChartArea = "ChartArea2";
-            series1.Color = System.Drawing.Color.MediumBlue;
-            series1.LegendText = "Number of\\nItem Sales";
-            series1.Name = "Number of Product Sales";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1042, 581);
+            series2.BorderColor = System.Drawing.Color.White;
+            series2.ChartArea = "ChartArea2";
+            series2.Color = System.Drawing.Color.MediumBlue;
+            series2.LegendText = "Number of\\nItem Sales";
+            series2.Name = "Number of Product Sales";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(782, 472);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            title1.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title1.BackColor = System.Drawing.Color.Transparent;
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Title1";
-            title1.Text = "Product Item Sales";
-            title1.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
-            this.chart1.Titles.Add(title1);
+            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title2.BackColor = System.Drawing.Color.Transparent;
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "Product Item Sales";
+            title2.TextStyle = System.Windows.Forms.DataVisualization.Charting.TextStyle.Shadow;
+            this.chart1.Titles.Add(title2);
             this.chart1.Visible = false;
             // 
             // monthySalesReport
             // 
-            this.monthySalesReport.Location = new System.Drawing.Point(17, 4);
-            this.monthySalesReport.Margin = new System.Windows.Forms.Padding(4);
+            this.monthySalesReport.Location = new System.Drawing.Point(13, 3);
             this.monthySalesReport.Name = "monthySalesReport";
-            this.monthySalesReport.Size = new System.Drawing.Size(264, 27);
+            this.monthySalesReport.Size = new System.Drawing.Size(198, 22);
             this.monthySalesReport.TabIndex = 2;
             this.monthySalesReport.Text = "Display Monthly Sales Data";
             this.monthySalesReport.UseVisualStyleBackColor = true;
@@ -98,10 +96,9 @@
             // 
             // allTimeSalesButton
             // 
-            this.allTimeSalesButton.Location = new System.Drawing.Point(17, 39);
-            this.allTimeSalesButton.Margin = new System.Windows.Forms.Padding(4);
+            this.allTimeSalesButton.Location = new System.Drawing.Point(13, 32);
             this.allTimeSalesButton.Name = "allTimeSalesButton";
-            this.allTimeSalesButton.Size = new System.Drawing.Size(264, 27);
+            this.allTimeSalesButton.Size = new System.Drawing.Size(198, 22);
             this.allTimeSalesButton.TabIndex = 4;
             this.allTimeSalesButton.Text = "Display All Time Product Sales";
             this.allTimeSalesButton.UseVisualStyleBackColor = true;
@@ -128,79 +125,17 @@
             this.Dec});
             this.reportGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportGrid.Location = new System.Drawing.Point(0, 0);
-            this.reportGrid.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
-            this.reportGrid.MinimumSize = new System.Drawing.Size(643, 380);
+            this.reportGrid.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.reportGrid.MinimumSize = new System.Drawing.Size(482, 309);
             this.reportGrid.Name = "reportGrid";
             this.reportGrid.ReadOnly = true;
             this.reportGrid.RowHeadersWidth = 5;
             this.reportGrid.RowTemplate.Height = 24;
-            this.reportGrid.Size = new System.Drawing.Size(1042, 581);
+            this.reportGrid.Size = new System.Drawing.Size(782, 472);
             this.reportGrid.StandardTab = true;
             this.reportGrid.TabIndex = 5;
             this.reportGrid.Visible = false;
-            // 
-            // yearLabel
-            // 
-            this.yearLabel.AutoSize = true;
-            this.yearLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.yearLabel.Location = new System.Drawing.Point(348, 44);
-            this.yearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(42, 17);
-            this.yearLabel.TabIndex = 7;
-            this.yearLabel.Text = "Year:";
-            this.yearLabel.Visible = false;
-            // 
-            // dropDownListYear
-            // 
-            this.dropDownListYear.FormattingEnabled = true;
-            this.dropDownListYear.Items.AddRange(new object[] {
-            "2020",
-            "2019",
-            "2018"});
-            this.dropDownListYear.Location = new System.Drawing.Point(398, 42);
-            this.dropDownListYear.Margin = new System.Windows.Forms.Padding(4);
-            this.dropDownListYear.Name = "dropDownListYear";
-            this.dropDownListYear.Size = new System.Drawing.Size(64, 24);
-            this.dropDownListYear.TabIndex = 8;
-            this.dropDownListYear.Text = "2020";
-            this.dropDownListYear.Visible = false;
-            this.dropDownListYear.SelectedIndexChanged += new System.EventHandler(this.dropDownListYear_SelectedIndexChanged);
-            // 
-            // exportButton
-            // 
-            this.exportButton.Location = new System.Drawing.Point(351, 4);
-            this.exportButton.Margin = new System.Windows.Forms.Padding(4);
-            this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(264, 27);
-            this.exportButton.TabIndex = 9;
-            this.exportButton.Text = "Export Report as .CSV File";
-            this.exportButton.UseVisualStyleBackColor = true;
-            this.exportButton.Visible = false;
-            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.monthySalesReport);
-            this.panel1.Controls.Add(this.yearLabel);
-            this.panel1.Controls.Add(this.dropDownListYear);
-            this.panel1.Controls.Add(this.exportButton);
-            this.panel1.Controls.Add(this.allTimeSalesButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(20, 20);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1042, 77);
-            this.panel1.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.reportGrid);
-            this.panel2.Controls.Add(this.chart1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(20, 97);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1042, 581);
-            this.panel2.TabIndex = 11;
+            this.reportGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.reportGrid_CellContentClick);
             // 
             // Product
             // 
@@ -307,18 +242,80 @@
             this.Dec.ReadOnly = true;
             this.Dec.Width = 70;
             // 
+            // yearLabel
+            // 
+            this.yearLabel.AutoSize = true;
+            this.yearLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.yearLabel.Location = new System.Drawing.Point(261, 36);
+            this.yearLabel.Name = "yearLabel";
+            this.yearLabel.Size = new System.Drawing.Size(32, 13);
+            this.yearLabel.TabIndex = 7;
+            this.yearLabel.Text = "Year:";
+            this.yearLabel.Visible = false;
+            // 
+            // dropDownListYear
+            // 
+            this.dropDownListYear.FormattingEnabled = true;
+            this.dropDownListYear.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018"});
+            this.dropDownListYear.Location = new System.Drawing.Point(298, 34);
+            this.dropDownListYear.Name = "dropDownListYear";
+            this.dropDownListYear.Size = new System.Drawing.Size(49, 21);
+            this.dropDownListYear.TabIndex = 8;
+            this.dropDownListYear.Text = "2020";
+            this.dropDownListYear.Visible = false;
+            this.dropDownListYear.SelectedIndexChanged += new System.EventHandler(this.dropDownListYear_SelectedIndexChanged);
+            // 
+            // exportButton
+            // 
+            this.exportButton.Location = new System.Drawing.Point(263, 3);
+            this.exportButton.Name = "exportButton";
+            this.exportButton.Size = new System.Drawing.Size(198, 22);
+            this.exportButton.TabIndex = 9;
+            this.exportButton.Text = "Export Report as .CSV File";
+            this.exportButton.UseVisualStyleBackColor = true;
+            this.exportButton.Visible = false;
+            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.monthySalesReport);
+            this.panel1.Controls.Add(this.yearLabel);
+            this.panel1.Controls.Add(this.dropDownListYear);
+            this.panel1.Controls.Add(this.exportButton);
+            this.panel1.Controls.Add(this.allTimeSalesButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(15, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(782, 63);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.reportGrid);
+            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(15, 79);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(782, 472);
+            this.panel2.TabIndex = 11;
+            // 
             // Reports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1082, 698);
+            this.ClientSize = new System.Drawing.Size(812, 567);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Reports";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.Text = "Report";
             this.Load += new System.EventHandler(this.Reports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

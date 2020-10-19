@@ -56,6 +56,7 @@
     <Compile Include="addOrders.Designer.cs">
       <DependentUpon>addOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="Encryption.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

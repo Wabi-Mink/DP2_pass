@@ -256,5 +256,10 @@ namespace DP2
         private void exportButton_Click(object sender, EventArgs e) {
             exportReport();
         }
+
+        private void reportGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

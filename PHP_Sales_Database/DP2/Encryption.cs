@@ -235,22 +235,30 @@ namespace DP2
             byte[] originalName = HashString(username);
             byte[] originalPassword = HashString(password);
 
-            FileStream file = new FileStream(directoryOfPasswords, FileMode.Open);
-            bool foundPW = false;
-            while (!foundPW)
+            if (!File.Exists(directoryOfPasswords))
             {
-                int count = file.Read(originalName, 0, 32);
-                count += file.Read(originalPassword, 0, 32);
-                if (count < 32)
-                    break;
-                if (HashEquals(originalName, inName) && HashEquals(originalPassword, inPassword))
-                    foundPW = true;
+                FileStream file = new FileStream(directoryOfPasswords, FileMode.Create);
+                return false;
             }
+            else
+            {
+                FileStream file = new FileStream(directoryOfPasswords, FileMode.Open);
+                bool foundPW = false;
+                while (!foundPW)
+                {
+                    int count = file.Read(originalName, 0, 32);
+                    count += file.Read(originalPassword, 0, 32);
+                    if (count < 32)
+                        break;
+                    if (HashEquals(originalName, inName) && HashEquals(originalPassword, inPassword))
+                        foundPW = true;
+                }
 
-            file.Flush();
-            file.Close();
+                file.Flush();
+                file.Close();
 
-            return foundPW;
+                return foundPW;
+            }
         }
         
         /// <summary> Used to compare byte arrays since hashed values are arrays and therefore == will fail. </summary>
@@ -274,7 +282,11 @@ namespace DP2
             byte[] originalName = HashString(username);
             byte[] originalPassword = new byte[32];
 
-            FileStream file = new FileStream(directoryOfPasswords, FileMode.Open);
+            FileStream file;
+            if (!File.Exists(directoryOfPasswords))
+                file = new FileStream(directoryOfPasswords, FileMode.Create);
+            else
+                file = new FileStream(directoryOfPasswords, FileMode.Open);
             bool foundName = false;
             while (!foundName)
             {

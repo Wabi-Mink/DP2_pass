@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DP2;
 
 namespace DP2
 {
@@ -24,6 +25,9 @@ namespace DP2
         }
         private void login(object sender, EventArgs e)
         {
+            encryptedLogin();
+            return;
+
             int i = 0;
             string line;
             bool match = false;
@@ -47,6 +51,25 @@ namespace DP2
             if (match)
             {
                 file.Close();
+                this.Hide();
+                main Main = new main();
+                Main.Show();
+                //reset textBox and date picker
+                ID_No.Text = "";
+                Password.Text = "";
+            }
+            else
+            {
+                var msgBox = MessageBox.Show("Password or User ID is wrong!", "Error",
+                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Password.Text = "";
+            }
+        }
+
+        private void encryptedLogin()
+        {
+            if (Encryption.CheckPassword(ID_No.Text, Password.Text, "registeredUsers.dat"))
+            {
                 this.Hide();
                 main Main = new main();
                 Main.Show();

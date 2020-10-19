@@ -20,7 +20,10 @@ namespace DP2
 
         private void btn_register(object sender, EventArgs e)
         {
-            //initialises the new registaation data into one string array
+            encryptedRegister();
+            return;
+
+            //initialises the new registation data into one string array
             string[] registration_record = {ID_No.Text,
                                             Password.Text};
 
@@ -61,6 +64,25 @@ namespace DP2
 
             file.Flush();
             file.Close();
+        }
+
+        public void encryptedRegister()
+        {
+            if (Encryption.CheckUserExists(ID_No.Text, "registeredUsers.dat") == false)
+            {
+                Encryption.SaveNameAndPassword(ID_No.Text, Password.Text, "registeredUsers.dat");
+
+                //reset textBox and date picker
+                ID_No.Text = "";
+                Password.Text = "";
+                RePassword.Text = "";
+
+                this.Close();
+
+                //Show a success message box
+                var msgBox = MessageBox.Show("You have succesfully Registered!", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
