@@ -42,15 +42,34 @@ namespace DP2
         }
 
         private void Orders_Load(object sender, EventArgs e) {
-            //orderRecords.txt is loaded by StreamReader
-            //and all entries are placed into a table to be viewed/edited
-            StreamReader records = new StreamReader("orderRecords.txt");
-            records.ReadLine();
-            while (!records.EndOfStream) {
-                string[] entry = records.ReadLine().Split(',');
-                ordersGrid.Rows.Add(entry);
+            try
+            {
+                //orderRecords.txt is loaded by StreamReader
+                //and all entries are placed into a table to be viewed/edited
+                StreamReader records = new StreamReader("orderRecords.txt");
+                records.ReadLine();
+                try
+                {
+                    while (!records.EndOfStream)
+                    {
+                        string[] entry = records.ReadLine().Split(',');
+                        if (entry.Length == 4)
+                            ordersGrid.Rows.Add(entry);
+                        else
+                            throw new IndexOutOfRangeException();
+                    }
+                    records.Close();
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    MessageBox.Show("Data found in orderRecords.txt is either corrupted or in wrong format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            records.Close();
+            catch (FileNotFoundException)
+            {
+                addButton.Visible = false;
+                MessageBox.Show("Could not find orderRecords.txt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void addButton_Click_1(object sender, EventArgs e) {

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.settingsButton = new FontAwesome.Sharp.IconButton();
             this.aboutButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ordersButton = new FontAwesome.Sharp.IconButton();
@@ -58,7 +57,6 @@
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.mainPanel.Controls.Add(this.settingsButton);
             this.mainPanel.Controls.Add(this.aboutButton);
             this.mainPanel.Controls.Add(this.panel3);
             this.mainPanel.Controls.Add(this.menuButton);
@@ -69,27 +67,6 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(200, 755);
             this.mainPanel.TabIndex = 0;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.settingsButton.Font = new System.Drawing.Font("Century Gothic", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.settingsButton.IconChar = FontAwesome.Sharp.IconChar.Cogs;
-            this.settingsButton.IconColor = System.Drawing.Color.Gainsboro;
-            this.settingsButton.IconSize = 45;
-            this.settingsButton.Location = new System.Drawing.Point(0, 613);
-            this.settingsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Rotation = 0D;
-            this.settingsButton.Size = new System.Drawing.Size(200, 71);
-            this.settingsButton.TabIndex = 4;
-            this.settingsButton.Text = "SETTINGS";
-            this.settingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.settingsButton.UseVisualStyleBackColor = true;
             // 
             // aboutButton
             // 
@@ -111,6 +88,7 @@
             this.aboutButton.Text = "ABOUT";
             this.aboutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
             // 
             // panel3
             // 
@@ -395,7 +373,6 @@
         private FontAwesome.Sharp.IconButton reportsButton;
         private FontAwesome.Sharp.IconButton salesButton;
         private FontAwesome.Sharp.IconButton inboxButton;
-        private FontAwesome.Sharp.IconButton settingsButton;
         private FontAwesome.Sharp.IconButton aboutButton;
         private System.Windows.Forms.Label mainLabel;
         private FontAwesome.Sharp.IconPictureBox mainIcon;

@@ -21,13 +21,32 @@ namespace DP2
         private void Inventory_Load_1(object sender, EventArgs e) {
             //productRecords.txt is loaded by StreamReader
             //and all entries are placed into a table
-            StreamReader records = new StreamReader("productRecords.txt");
-            records.ReadLine();
-            while (!records.EndOfStream) {
-                string[] entry = records.ReadLine().Split(',');
-                productGrid.Rows.Add(entry);
+            try
+            {
+                StreamReader records = new StreamReader("productRecords.txt");
+                records.ReadLine();
+                try
+                {
+                    while (!records.EndOfStream)
+                    {
+                        string[] entry = records.ReadLine().Split(',');
+                        if (entry.Length == 5)
+                            productGrid.Rows.Add(entry);
+                        else
+                            throw new IndexOutOfRangeException();
+                    }
+
+                    records.Close();
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    MessageBox.Show("1Data found in salesRecords.txt/productRecords.txt is either corrupted or in wrong format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            records.Close();
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Could not find productRecords.txt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
