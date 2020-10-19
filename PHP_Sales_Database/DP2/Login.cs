@@ -32,33 +32,50 @@ namespace DP2
             string login_attempt = ID_No.Text + "," + Password.Text;
 
             //Open the registeredUsers.txt file
-            StreamReader file = new StreamReader("registeredUsers.txt", true);
-
-            while ((line = file.ReadLine()) != null)
+            try
             {
-                if (line == login_attempt)
+                StreamReader file = new StreamReader("registeredUsers.txt", true);
+
+                while ((line = file.ReadLine()) != null)
                 {
-                    match = true;
-                    break;
+                    if (line == login_attempt)
+                    {
+                        match = true;
+                        break;
+                    }
+                    i++;
                 }
-                i++;
+
+                if (match)
+                {
+                    file.Close();
+                    this.Hide();
+                    try
+                    {
+                        main Main = new main();
+                        Main.Closed += (s, args) => this.Close();
+                        Main.Show();
+                    }
+                    catch (FileNotFoundException)
+                    {
+                        MessageBox.Show("Missing FontAwesome.Sharp.dll","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    //reset textBox and date picker
+                    ID_No.Text = "";
+                    Password.Text = "";
+                }
+                else
+                {
+                    var msgBox = MessageBox.Show("Password or User ID is wrong!", "Error",
+                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Password.Text = "";
+                }
             }
 
-            if (match)
+            catch (FileNotFoundException)
             {
-                file.Close();
-                this.Hide();
-                main Main = new main();
-                Main.Show();
-                //reset textBox and date picker
-                ID_No.Text = "";
-                Password.Text = "";
-            }
-            else
-            {
-                var msgBox = MessageBox.Show("Password or User ID is wrong!", "Error",
-                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Password.Text = "";
+                MessageBox.Show("Could not find registeredUsers.txt");
+                this.Close();
             }
         }
 

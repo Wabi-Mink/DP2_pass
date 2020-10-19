@@ -110,5 +110,10 @@ namespace DP2
                 DisableButton();
             } 
         }
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Wabi-Mink/DP2_pass/blob/master/README.md");
+        }
     }
 }
