@@ -5,10 +5,7 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHP_Sales_Database", "DP2\PHP_Sales_Database.csproj", "{D106D052-1FAC-439F-AB6B-F80983651F2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "Unit_Testing\UnitTestProject1\UnitTestProject1.csproj", "{F83248E2-3E08-4E6D-92BE-3377498A2BF2}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D106D052-1FAC-439F-AB6B-F80983651F2A} = {D106D052-1FAC-439F-AB6B-F80983651F2A}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{EC268D23-16ED-476F-8859-420D6C26BD2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +17,10 @@ Global
 		{D106D052-1FAC-439F-AB6B-F80983651F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D106D052-1FAC-439F-AB6B-F80983651F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D106D052-1FAC-439F-AB6B-F80983651F2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F83248E2-3E08-4E6D-92BE-3377498A2BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F83248E2-3E08-4E6D-92BE-3377498A2BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F83248E2-3E08-4E6D-92BE-3377498A2BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F83248E2-3E08-4E6D-92BE-3377498A2BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC268D23-16ED-476F-8859-420D6C26BD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC268D23-16ED-476F-8859-420D6C26BD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC268D23-16ED-476F-8859-420D6C26BD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC268D23-16ED-476F-8859-420D6C26BD2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
