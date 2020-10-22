@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -64,7 +57,7 @@ namespace DP2
                 }
                 records.Close();
             }
-            catch (FileNotFoundException) 
+            catch (FileNotFoundException)
             {
                 addButton.Visible = false;
                 MessageBox.Show("Could not find salesRecords.txt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -83,10 +76,11 @@ namespace DP2
             var addSales = new addSales();
             addSales.Location = this.Location;
             addSales.StartPosition = FormStartPosition.CenterParent;
-            addSales.FormClosing += delegate {
+            addSales.FormClosing += delegate
+            {
                 salesGrid.Rows.Clear();
                 salesGrid.Refresh();
-                Sales_Load(sender, e); 
+                Sales_Load(sender, e);
             };
             addSales.ShowDialog();
         }

@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -18,7 +13,8 @@ namespace DP2
             InitializeComponent();
         }
 
-        private void generateMonthlyReport() {
+        private void generateMonthlyReport()
+        {
             try
             {
                 try
@@ -131,7 +127,7 @@ namespace DP2
                         reportGrid[0, i].Value = productNames[i + 1];
                     }
                 }
-           
+
                 catch
                 {
                     exportButton.Visible = false;
@@ -143,10 +139,12 @@ namespace DP2
                 MessageBox.Show("Could not find salesRecords.txt/productRecords.txt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void exportReport() {
+        private void exportReport()
+        {
             string yearReport = dropDownListYear.SelectedItem.ToString();
             StreamWriter file;
-            switch (yearReport) {
+            switch (yearReport)
+            {
                 case "2018":
                     file = new StreamWriter("MonthlySalesReport2018.csv", false);
                     break;
@@ -162,8 +160,10 @@ namespace DP2
             }
 
             file.WriteLine("Product,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec");
-            for (int i = 0; i < reportGrid.Rows.Count; i++) {
-                for (int j = 0; j < reportGrid.Rows[i].Cells.Count; j++) {
+            for (int i = 0; i < reportGrid.Rows.Count; i++)
+            {
+                for (int j = 0; j < reportGrid.Rows[i].Cells.Count; j++)
+                {
                     file.Write(reportGrid.Rows[i].Cells[j].Value.ToString());
                     if (j != 12) { file.Write(","); };
                 }
@@ -172,7 +172,8 @@ namespace DP2
             file.Flush();
             file.Close();
         }
-        private void generateSalesGraph() {
+        private void generateSalesGraph()
+        {
             try
             {
                 DataTable dt = new DataTable();
@@ -271,7 +272,7 @@ namespace DP2
                     dt.WriteXml("dtSchema.xml");
                 }
             }
-        
+
             catch
             {
             }
@@ -281,7 +282,8 @@ namespace DP2
             generateSalesGraph();
             generateMonthlyReport();
         }
-        private void button3_Click(object sender, EventArgs e) {
+        private void button3_Click(object sender, EventArgs e)
+        {
             //all time sales button
             chart1.Visible = true;
             reportGrid.Visible = false;
@@ -289,17 +291,20 @@ namespace DP2
             dropDownListYear.Visible = false;
             exportButton.Visible = false;
         }
-        private void monthySalesReport_Click(object sender, EventArgs e) {
+        private void monthySalesReport_Click(object sender, EventArgs e)
+        {
             chart1.Visible = false;
             reportGrid.Visible = true;
             yearLabel.Visible = true;
             dropDownListYear.Visible = true;
             exportButton.Visible = true;
         }
-        private void dropDownListYear_SelectedIndexChanged(object sender, EventArgs e) {
+        private void dropDownListYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
             generateMonthlyReport();
         }
-        private void exportButton_Click(object sender, EventArgs e) {
+        private void exportButton_Click(object sender, EventArgs e)
+        {
             exportReport();
         }
 

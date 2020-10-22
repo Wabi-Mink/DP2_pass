@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DP2;
 
 namespace DP2
 {
@@ -62,7 +54,7 @@ namespace DP2
                     }
                     catch (FileNotFoundException)
                     {
-                        MessageBox.Show("Missing FontAwesome.Sharp.dll","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Missing FontAwesome.Sharp.dll", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     //reset textBox and date picker
                     ID_No.Text = "";

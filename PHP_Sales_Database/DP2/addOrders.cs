@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -27,9 +20,11 @@ namespace DP2
             datePicker.Value = DateTime.Now;
         }
 
-        private void writeToFile(string filepath, string[] entries) {
+        private void writeToFile(string filepath, string[] entries)
+        {
             StreamWriter file = new StreamWriter(filepath, false);
-            for (int i = 0; i < entries.Length; i++) {
+            for (int i = 0; i < entries.Length; i++)
+            {
                 file.WriteLine(entries[i]);
             }
 
@@ -37,18 +32,21 @@ namespace DP2
             file.Close();
         }
 
-        private bool alterInventoryStock(string prodID, string quantity) {
+        private bool alterInventoryStock(string prodID, string quantity)
+        {
             string[] linesProducts = System.IO.File.ReadAllLines("productRecords.txt");
-            for (int i = 1; i < linesProducts.Length; i++) {
+            for (int i = 1; i < linesProducts.Length; i++)
+            {
                 string[] productSplit = linesProducts[i].Split(',');
-                if (productSplit[0] == prodID) {
-                        productSplit[4] = (int.Parse(productSplit[4]) + int.Parse(quantity)).ToString();
-                        string alteredEntry = productSplit[0] + "," + productSplit[1] + "," + productSplit[2] + "," + productSplit[3] + "," + productSplit[4];
-                        linesProducts[i] = alteredEntry;
-                        writeToFile("productRecords.txt", linesProducts);
-                        return true;
-                    }
+                if (productSplit[0] == prodID)
+                {
+                    productSplit[4] = (int.Parse(productSplit[4]) + int.Parse(quantity)).ToString();
+                    string alteredEntry = productSplit[0] + "," + productSplit[1] + "," + productSplit[2] + "," + productSplit[3] + "," + productSplit[4];
+                    linesProducts[i] = alteredEntry;
+                    writeToFile("productRecords.txt", linesProducts);
+                    return true;
                 }
+            }
             return false;
         }
 
@@ -61,14 +59,19 @@ namespace DP2
                                     quantityNum.Text};
 
             //check and change the inventory of the item purchased (if able) so that its value goes down.
-            if (alterInventoryStock(prodIDText.Text, quantityNum.Text)) {
+            if (alterInventoryStock(prodIDText.Text, quantityNum.Text))
+            {
                 //outputs new sales record to the orderRecords.txt file
                 StreamWriter file = new StreamWriter("orderRecords.txt", true);
-                for (int i = 0; i < order_record.Length; i++) {
+                for (int i = 0; i < order_record.Length; i++)
+                {
                     file.Write(order_record[i]);
-                    if (i != 3) {
+                    if (i != 3)
+                    {
                         file.Write(",");
-                    } else {
+                    }
+                    else
+                    {
                         file.WriteLine("");
                     }
                 }
@@ -81,7 +84,8 @@ namespace DP2
 
                 deleteIcon_Click(sender, e);
             }
-            else {
+            else
+            {
 
             }
 
@@ -92,7 +96,7 @@ namespace DP2
 
         private void deleteIcon_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void closeIcon_Click(object sender, EventArgs e)
@@ -112,12 +116,14 @@ namespace DP2
         private void addSales_FormClosing(object sender, FormClosingEventArgs e)
         {
         }
-        private void enterCurrentID() {
+        private void enterCurrentID()
+        {
             string[] orders = System.IO.File.ReadAllLines("orderRecords.txt");
             idText.Text = "OD" + orders.Length.ToString();
         }
 
-        private void addSales_Load(object sender, EventArgs e) {
+        private void addSales_Load(object sender, EventArgs e)
+        {
             enterCurrentID();
         }
     }

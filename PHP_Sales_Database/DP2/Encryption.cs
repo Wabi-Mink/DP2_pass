@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace DP2
 {
@@ -18,7 +16,9 @@ namespace DP2
                 byte[] key = new byte[s];
 
                 for (int i = 0; i < s; ++i)
-                    key[i] = (byte)((Math.PI*17)/i);
+                {
+                    key[i] = (byte)((Math.PI * 17) / i);
+                }
 
                 return key;
             }
@@ -28,11 +28,19 @@ namespace DP2
         private static byte[] EncryptLine(string unEncryptedText, byte[] IV)
         {
             if (unEncryptedText == null || unEncryptedText.Length <= 0)
+            {
                 throw new ArgumentNullException("plainText");
+            }
+
             if (CommonKey == null || CommonKey.Length <= 0)
+            {
                 throw new ArgumentNullException("Key");
+            }
+
             if (IV == null || IV.Length <= 0)
+            {
                 throw new ArgumentNullException("IV");
+            }
 
             byte[] result;
 
@@ -66,11 +74,19 @@ namespace DP2
         private static string DecryptLine(byte[] cipherText, byte[] IV)
         {
             if (cipherText == null || cipherText.Length <= 0)
+            {
                 throw new ArgumentNullException("cipherText");
+            }
+
             if (CommonKey == null || CommonKey.Length <= 0)
+            {
                 throw new ArgumentNullException("Key");
+            }
+
             if (IV == null || IV.Length <= 0)
+            {
                 throw new ArgumentNullException("IV");
+            }
 
             string plaintext = null;
 
@@ -104,7 +120,7 @@ namespace DP2
             stringRijindael.GenerateIV();
 
             FileStream file = new FileStream(directory, FileMode.Create);
-            
+
             file.Write(stringRijindael.IV, 0, stringRijindael.IV.Length);
             byte[] encryptedData = EncryptSeries(unEncryptedText, stringRijindael.IV);
             file.Write(encryptedData, 0, encryptedData.Length);
@@ -112,7 +128,7 @@ namespace DP2
             file.Flush();
             file.Close();
         }
-        
+
         /// <summary> Opposite of 'EncryptAndStoreText()'. Decrypts a file and generates from it the list of strings which were encrypted. </summary>
         public static string[] DecryptFileToText(string directory)
         {
@@ -137,11 +153,19 @@ namespace DP2
         private static byte[] EncryptSeries(string[] unEncryptedText, byte[] IV)
         {
             if (unEncryptedText == null || unEncryptedText.Length <= 0)
+            {
                 throw new ArgumentNullException("plainText");
+            }
+
             if (CommonKey == null || CommonKey.Length <= 0)
+            {
                 throw new ArgumentNullException("Key");
+            }
+
             if (IV == null || IV.Length <= 0)
+            {
                 throw new ArgumentNullException("IV");
+            }
 
             byte[] result;
 
@@ -157,7 +181,9 @@ namespace DP2
             StreamWriter swEncrypt = new StreamWriter(csEncrypt);
 
             foreach (string line in unEncryptedText)
+            {
                 swEncrypt.WriteLine(line);
+            }
 
             swEncrypt.Flush();
             swEncrypt.Close();
@@ -176,11 +202,19 @@ namespace DP2
         private static string[] DecryptSeries(byte[] cipherText, byte[] IV)
         {
             if (cipherText == null || cipherText.Length <= 0)
+            {
                 throw new ArgumentNullException("cipherText");
+            }
+
             if (CommonKey == null || CommonKey.Length <= 0)
+            {
                 throw new ArgumentNullException("Key");
+            }
+
             if (IV == null || IV.Length <= 0)
+            {
                 throw new ArgumentNullException("IV");
+            }
 
             List<string> plaintext = new List<string>();
 
@@ -195,7 +229,9 @@ namespace DP2
             StreamReader srDecrypt = new StreamReader(csDecrypt);
 
             while (!srDecrypt.EndOfStream)
+            {
                 plaintext.Add(srDecrypt.ReadLine());
+            }
 
             srDecrypt.Close();
             csDecrypt.Close();
@@ -210,7 +246,7 @@ namespace DP2
         private static byte[] HashString(string unEncryptedText)
         {
             SHA256 mainSHA = SHA256.Create();
-            
+
             byte[] result = mainSHA.ComputeHash(Encoding.ASCII.GetBytes(unEncryptedText));
             return result;
         }
@@ -221,7 +257,9 @@ namespace DP2
             string s = "";
 
             foreach (byte b in input)
+            {
                 s += (int)b + " ";
+            }
 
             return s;
         }
@@ -249,9 +287,14 @@ namespace DP2
                     int count = file.Read(originalName, 0, 32);
                     count += file.Read(originalPassword, 0, 32);
                     if (count < 32)
+                    {
                         break;
+                    }
+
                     if (HashEquals(originalName, inName) && HashEquals(originalPassword, inPassword))
+                    {
                         foundPW = true;
+                    }
                 }
 
                 file.Flush();
@@ -260,20 +303,25 @@ namespace DP2
                 return foundPW;
             }
         }
-        
+
         /// <summary> Used to compare byte arrays since hashed values are arrays and therefore == will fail. </summary>
         private static bool HashEquals(byte[] A, byte[] B)
         {
             if (A.Length != B.Length)
+            {
                 return false;
+            }
+
             for (int i = 0; i < A.Length; ++i)
             {
                 if (A[i] != B[i])
+                {
                     return false;
+                }
             }
             return true;
         }
-        
+
         /// <summary> Checks if the username already exists in the UN/PW file, e.g. so that duplicate accounts cannot be created. </summary>
         public static bool CheckUserExists(string username, string directoryOfPasswords)
         {
@@ -284,18 +332,28 @@ namespace DP2
 
             FileStream file;
             if (!File.Exists(directoryOfPasswords))
+            {
                 file = new FileStream(directoryOfPasswords, FileMode.Create);
+            }
             else
+            {
                 file = new FileStream(directoryOfPasswords, FileMode.Open);
+            }
+
             bool foundName = false;
             while (!foundName)
             {
                 int count = file.Read(originalName, 0, 32);
                 count += file.Read(originalPassword, 0, 32);
                 if (count < 32)
+                {
                     break;
+                }
+
                 if (HashEquals(originalName, inName))
+                {
                     foundName = true;
+                }
             }
 
             file.Flush();

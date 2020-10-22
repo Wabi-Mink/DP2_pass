@@ -1,13 +1,6 @@
 ﻿using FontAwesome.Sharp;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Tracing;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -24,7 +17,10 @@ namespace DP2
         private void open(Form form)
         {
             if (activiteForm != null)
+            {
                 activiteForm.Close();
+            }
+
             activiteForm = form;
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
@@ -108,7 +104,7 @@ namespace DP2
                 mainIcon.IconChar = IconChar.Home;
                 mainLabel.Text = "Homepage";
                 DisableButton();
-            } 
+            }
         }
 
         private void aboutButton_Click(object sender, EventArgs e)

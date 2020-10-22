@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -18,7 +11,8 @@ namespace DP2
             InitializeComponent();
         }
 
-        private void Inventory_Load_1(object sender, EventArgs e) {
+        private void Inventory_Load_1(object sender, EventArgs e)
+        {
             //productRecords.txt is loaded by StreamReader
             //and all entries are placed into a table
             try
@@ -31,9 +25,13 @@ namespace DP2
                     {
                         string[] entry = records.ReadLine().Split(',');
                         if (entry.Length == 5)
+                        {
                             productGrid.Rows.Add(entry);
+                        }
                         else
+                        {
                             throw new IndexOutOfRangeException();
+                        }
                     }
 
                     records.Close();

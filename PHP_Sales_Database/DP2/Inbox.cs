@@ -2,13 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DP2
@@ -21,7 +15,8 @@ namespace DP2
             InitializeComponent();
         }
 
-        private void stockAlert(DataGridView grid) {
+        private void stockAlert(DataGridView grid)
+        {
 
             void addProductToLowStockTable(string[] entry)
             {
@@ -32,7 +27,10 @@ namespace DP2
             if (activeMode != "lowStock")
             {
                 if (grid.Columns.Count > 1)
+                {
                     grid.Columns.RemoveAt(1);
+                }
+
                 grid.Rows.Clear();
 
                 grid.Columns.Add("Stock", "Stock");
@@ -80,7 +78,10 @@ namespace DP2
             if (activeMode != "highDemand")
             {
                 if (grid.Columns.Count > 1)
+                {
                     grid.Columns.RemoveAt(1);
+                }
+
                 grid.Rows.Clear();
                 try
                 {
@@ -192,7 +193,7 @@ namespace DP2
                     {
                         MessageBox.Show("Data found in salesRecords.txt/productRecords.txt is either corrupted or in wrong format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }  
+                }
                 catch (FileNotFoundException)
                 {
                     MessageBox.Show("Could not find salesRecords.txt/productRecords.txt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
