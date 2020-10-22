@@ -54,13 +54,13 @@
             this.quantity});
             this.salesGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.salesGrid.Location = new System.Drawing.Point(0, 0);
-            this.salesGrid.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
-            this.salesGrid.MinimumSize = new System.Drawing.Size(643, 380);
+            this.salesGrid.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.salesGrid.MinimumSize = new System.Drawing.Size(482, 309);
             this.salesGrid.Name = "salesGrid";
             this.salesGrid.ReadOnly = true;
             this.salesGrid.RowHeadersWidth = 5;
             this.salesGrid.RowTemplate.Height = 24;
-            this.salesGrid.Size = new System.Drawing.Size(1042, 558);
+            this.salesGrid.Size = new System.Drawing.Size(782, 454);
             this.salesGrid.StandardTab = true;
             this.salesGrid.TabIndex = 0;
             this.salesGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salesGrid_CellContentClick);
@@ -72,7 +72,7 @@
             this.sales_id.MinimumWidth = 6;
             this.sales_id.Name = "sales_id";
             this.sales_id.ReadOnly = true;
-            this.sales_id.Width = 89;
+            this.sales_id.Width = 70;
             // 
             // sales_date
             // 
@@ -81,7 +81,7 @@
             this.sales_date.MinimumWidth = 6;
             this.sales_date.Name = "sales_date";
             this.sales_date.ReadOnly = true;
-            this.sales_date.Width = 106;
+            this.sales_date.Width = 83;
             // 
             // product_id
             // 
@@ -90,7 +90,7 @@
             this.product_id.MinimumWidth = 6;
             this.product_id.Name = "product_id";
             this.product_id.ReadOnly = true;
-            this.product_id.Width = 104;
+            this.product_id.Width = 82;
             // 
             // quantity
             // 
@@ -109,11 +109,11 @@
             this.addButton.Font = new System.Drawing.Font("Century Gothic", 11.89565F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.Gainsboro;
             this.addButton.Location = new System.Drawing.Point(0, 0);
-            this.addButton.Margin = new System.Windows.Forms.Padding(29, 30, 29, 30);
-            this.addButton.MaximumSize = new System.Drawing.Size(121, 71);
-            this.addButton.MinimumSize = new System.Drawing.Size(121, 71);
+            this.addButton.Margin = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.addButton.MaximumSize = new System.Drawing.Size(91, 58);
+            this.addButton.MinimumSize = new System.Drawing.Size(91, 58);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(121, 71);
+            this.addButton.Size = new System.Drawing.Size(91, 58);
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
@@ -127,12 +127,12 @@
             this.viewSalesEdit_checkbox.Dock = System.Windows.Forms.DockStyle.Right;
             this.viewSalesEdit_checkbox.Font = new System.Drawing.Font("Century Gothic", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewSalesEdit_checkbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.viewSalesEdit_checkbox.Location = new System.Drawing.Point(859, 0);
-            this.viewSalesEdit_checkbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.viewSalesEdit_checkbox.MaximumSize = new System.Drawing.Size(183, 71);
-            this.viewSalesEdit_checkbox.MinimumSize = new System.Drawing.Size(183, 71);
+            this.viewSalesEdit_checkbox.Location = new System.Drawing.Point(645, 0);
+            this.viewSalesEdit_checkbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewSalesEdit_checkbox.MaximumSize = new System.Drawing.Size(137, 58);
+            this.viewSalesEdit_checkbox.MinimumSize = new System.Drawing.Size(137, 58);
             this.viewSalesEdit_checkbox.Name = "viewSalesEdit_checkbox";
-            this.viewSalesEdit_checkbox.Size = new System.Drawing.Size(183, 71);
+            this.viewSalesEdit_checkbox.Size = new System.Drawing.Size(137, 58);
             this.viewSalesEdit_checkbox.TabIndex = 3;
             this.viewSalesEdit_checkbox.Text = "READ ONLY";
             this.viewSalesEdit_checkbox.UseVisualStyleBackColor = true;
@@ -143,32 +143,34 @@
             this.panel1.Controls.Add(this.addButton);
             this.panel1.Controls.Add(this.viewSalesEdit_checkbox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(20, 578);
+            this.panel1.Location = new System.Drawing.Point(15, 470);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1042, 100);
+            this.panel1.Size = new System.Drawing.Size(782, 81);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.salesGrid);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(20, 20);
+            this.panel2.Location = new System.Drawing.Point(15, 16);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1042, 558);
+            this.panel2.Size = new System.Drawing.Size(782, 454);
             this.panel2.TabIndex = 5;
             // 
             // Sales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1082, 698);
+            this.ClientSize = new System.Drawing.Size(812, 567);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Sales";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.Text = "Sales";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sales_FormClosing);
             this.Load += new System.EventHandler(this.Sales_Load);

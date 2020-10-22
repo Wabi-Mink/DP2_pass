@@ -15,7 +15,7 @@ namespace DP2
         {
             try
             {
-                StreamReader records = new StreamReader("salesRecords.txt");
+                //StreamReader records = new StreamReader("salesRecords.txt");
                 File.WriteAllText("salesRecords.txt", "sales_ID,date,prod_ID,quantity");
                 StreamWriter file = new StreamWriter("salesRecords.txt", true);
                 file.WriteLine();
