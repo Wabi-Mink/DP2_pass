@@ -89,6 +89,7 @@ namespace DP2
             {
                 this.Hide();
                 main Main = new main();
+                Main.Closed += (s, args) => this.Close();
                 Main.Show();
                 //reset textBox and date picker
                 ID_No.Text = "";
